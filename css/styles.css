@@ -1,0 +1,147 @@
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.0); 
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    padding-left: 1rem;
+    height: 35px;
+}
+.edwin-name {
+    font-size: 46px;
+    font-weight: bold;
+    margin: 0px;
+    margin-top: 40px;
+}
+.edwin-name span{
+    letter-spacing: 2px; 
+}
+
+
+
+
+/*::::::::::::::::::::   profession   ::::::::::::::::::::::::::::*/
+
+.profession-container{
+    height: 35px;
+    font-size: 25px;
+    line-height: 35px;
+    overflow: hidden;
+    margin-top: -0px;
+    font-family: 'Josefin Sans', sans-serif;
+    /*
+    border-style: solid;
+    border-color: black;
+    */
+}
+
+
+.ul-container {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0;
+}
+
+
+.edwin-ing,
+.edwin-dev {
+    transform: translateY(0);
+    transition: all 0.9s ease;
+}
+
+.edwin-ing{
+    color: darkgreen;
+    opacity: 0.0;
+}
+
+
+.edwin-dev{    
+    color: darkmagenta;
+    opacity: 0.0;
+}
+
+
+
+
+/*::::::::::::::::::::   images   ::::::::::::::::::::::::::::*/
+
+.images-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: calc(100vh);
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh);
+    width: 50%;
+    cursor: pointer;
+    position: relative; 
+    transition: width 0.9s ease;
+}
+
+
+
+.image-container-dev:hover ,
+.image-container-ing:hover {
+    transition: width 0.9s ease;
+    width: 80%;
+}
+.image-container img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/*
+.image-container:hover img {
+    transform: scale(1.2);
+    z-index: 5;
+}
+*/
+
+.text-container {
+    position: absolute;
+
+    transform: translate(-00%, -00%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 0px;
+    border-radius: 5px;
+    width: 50vh; 
+    text-align: center; 
+
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 80;
+    transition: opacity 0.9s ease;
+    opacity: 0;
+}
+
+.text-container-ing {
+    top: 80%;
+    right: 1%;
+}
+.text-container-dev {
+    top: 80%;
+    left: 1%;
+}
+
+.image-container:hover .text-container {
+    opacity: 1;
+}
+
