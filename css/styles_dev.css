@@ -1,0 +1,576 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+  /**************************************************************************************/
+  /************************<!-- Contenido del header -->*********************************/
+  /**************************************************************************************/
+
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background-color: rgb(49, 2, 77, 0.2);
+    box-shadow: 0px 0px 20px 2px rgb(119, 119, 119, 0.2);
+    transition: background-color 0.5s ease;
+    z-index: 10;
+
+
+
+  }
+
+
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 32px;
+
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+
+  .logo {
+    flex-grow: 1;
+  }
+
+  .edwin-name {
+    font-size: 28px;
+    color: #dbdbdb;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .edwin-name span {
+    letter-spacing: 2px;
+  }
+
+  .nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .nav-menu li {
+    margin-left: 20px;
+  }
+
+
+  .nav-menu a {
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 300;
+    transition: color 0.3s ease;
+  }
+
+
+
+
+
+
+  /*boton menu*/
+  .icon-menu {
+    visibility: hidden;
+  }
+
+  .header-nav {
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    border-radius: 2px;
+    text-decoration: none;
+    /* display: none; */
+  }
+
+  .color-yes {
+    width: 100%;
+    height: 6px;
+    background-color: ivory;
+    border-radius: 2px;
+  }
+
+  .color-no {
+    width: 100%;
+    height: 6px;
+  }
+
+
+
+  /* Media query para el diseño responsivo */
+  @media (max-width: 890px) {
+
+    .nav-menu ul {
+      visibility: hidden;
+      width: 0;
+    }
+
+    /*boton menu*/
+    .icon-menu {
+      visibility: visible;
+
+    }
+
+    .header-container {
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+
+
+
+    .logo {
+      margin-bottom: 10px;
+    }
+
+    .nav-menu {
+      margin-top: 10px;
+    }
+
+    .nav-menu ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav-menu li {
+      margin: 10px 0;
+    }
+  }
+
+
+
+
+
+
+
+
+  
+  
+    /**************************************************************************************/
+    /********************<!--Fondo home / about / projects -->*****************************/
+    /**************************************************************************************/
+  
+
+
+
+    .bg-container {
+      background-image: linear-gradient(315deg,
+      hsl(240deg 100% 20%) 0%,
+      hsl(289deg 100% 21%) 3%,
+      hsl(315deg 100% 27%) 8%,
+      hsl(329deg 100% 36%) 17%,
+      hsl(337deg 100% 43%) 34%,
+      hsl(357deg 91% 59%) 64%,
+      hsl(17deg 100% 59%) 85%,
+      hsl(34deg 100% 53%) 94%,
+      hsl(45deg 100% 50%) 98%,
+      hsl(55deg 100% 50%) 100%);
+    }
+  
+  
+
+  
+
+  
+
+
+  /**************************************************************************************/
+  /************************<!-- Contenido del home -->*********************************/
+  /**************************************************************************************/
+
+
+
+
+
+  .home-container {
+    padding-top: 70px;
+    padding-left: 12%;
+    padding-right: 12%;
+    height: 100vh;
+    position: relative;
+
+  }
+
+
+
+
+  .title {
+    font-size: 100px;
+    margin: 0;
+    padding-top: 10%;
+    text-align: center;
+  }
+
+  .subtitle {
+    text-align: center;
+    margin: 0;
+    margin-top: 2%;
+    font-size: 50px;
+  }
+
+  .subtitle span {
+    color: rgb(165, 200, 210);
+    transition: all 2.0s ease;
+  }
+
+  .hide {
+    opacity: 0.5;
+  }
+
+  .show {
+    opacity: 1;
+  }
+
+
+
+  .text-ini {
+    margin: 0;
+    margin-top: 2%;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(219, 224, 226);
+    font-weight: 300;
+    text-align: center;
+
+  }
+
+  .text-ini img {
+    height: 15px;
+  }
+
+  .text {
+
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+    max-width: 600px;
+
+
+    font-size: 32px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(219, 224, 226);
+    font-weight: 300;
+
+  }
+
+  .text span {
+    color: rgb(183, 138, 199);
+  }
+
+
+
+
+
+
+
+
+  /* Media query para el diseño responsivo */
+  @media (max-width: 700px) {
+
+    .home-container {
+
+      padding-top: 70px;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+
+    .title {
+      font-size: 70px;
+    }
+
+    .subtitle {
+      font-size: 35px;
+    }
+
+
+    .text-ini {
+      font-size: 20px;
+
+    }
+
+    .text {
+      font-size: 23px;
+    }
+  }
+
+  @media (max-width: 550px) {
+
+    .home-container {
+
+      padding-top: 70px;
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+
+    .title {
+      font-size: 70px;
+    }
+
+    .subtitle {
+      font-size: 35px;
+    }
+
+
+    .text-ini {
+      font-size: 20px;
+
+    }
+
+    .text {
+      font-size: 20px;
+    }
+
+    .home-container {
+      height: auto;
+      padding-bottom: 100px;
+    }
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*<!-- Contenido de la sección Home -->*/
+
+
+
+
+
+
+
+
+
+  /*<!-- Contenido de la sección About Me -->*/
+
+
+  #about{
+
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .about-container {
+    height: 60px;
+    width: 220px;
+    border-radius: 25px;    
+    margin-bottom: 80%;    
+    background-color: #ffffff;
+    box-shadow: 5px 5px 20px 1px rgb(119, 119, 119, 0.5);
+    transition: all 0.5s ease;
+    
+  }
+  
+  .about-container-next {
+    height: 100vh;
+    width: 100%;    
+    margin-bottom: 5%;    
+    padding-top: 40px;
+    transition: all 3.0s ease;
+  }
+  
+ 
+
+  .about-container .title-section {
+    text-align: center;
+    margin: 00px;
+    padding: 12px;
+    font-size: 30px;
+    color: rgb(137, 28, 170);
+  }
+  
+
+
+
+
+
+
+
+.about-container-grid{
+  display: flex;
+  padding: 30px 50px;
+  
+
+}
+
+
+
+
+
+.card {
+  width: 300px;
+  max-width: 300px;
+  min-width: 300px;
+  margin-right: 20px;
+  background-color: #fff7ee;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.upper-section {
+  position: relative;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url( '/recurses/svg/bg-card.svg' );
+  background-size: 100% 100%;
+  background-position: center;
+  opacity: 0.8;
+
+}
+
+.profile-pic-container {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #ffffff46;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lower-section {
+  padding: 15px;
+}
+
+.lower-section h2 {
+
+  margin: 10px 0;
+  font-size: 24px;
+  text-align: center;
+}
+.lower-section h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+
+.lower-section p {
+  margin: 0;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+
+.container-iconos a{
+text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+.grid-console{
+  width: auto;
+  background-color: rgba(153, 205, 50, 0.164);
+  min-width: 250px;
+  flex-grow: 1;
+
+}
+
+
+
+
+
+@media (max-width: 850px) {
+
+ 
+
+  .about-container-grid{
+    flex-wrap: wrap;  
+    padding: 30px 10px;
+  }
+  
+  .card {
+    margin: auto;
+  }
+  .grid-console{
+    margin-top: 50px;
+  
+  }
+  
+
+}
+
+
+
+
+  /*<!-- Contenido de la sección Projects -->*/
+  /*<!-- Contenido de la sección Skills -->*/
+  /*<!-- Contenido del pie de página -->*/
