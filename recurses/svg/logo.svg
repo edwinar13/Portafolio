@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="290mm"
+   height="100mm"
+   viewBox="0 0 290 100"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#b7b8ff"
+     bordercolor="#000000"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#828282"
+     inkscape:document-units="mm"
+     showgrid="false"
+     borderlayer="true"
+     showborder="true"
+     inkscape:lockguides="false"
+     inkscape:zoom="0.35355339"
+     inkscape:cx="411.53615"
+     inkscape:cy="149.90664"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <color-profile
+       name="Black---White"
+       xlink:href="../../../../../../../WINDOWS/system32/spool/drivers/color/BlackWhite.icc"
+       id="color-profile20278" />
+    <color-profile
+       name="Agfa-:-Swop-Standard"
+       xlink:href="../../../../../../../WINDOWS/system32/spool/drivers/color/RSWOP.icm"
+       id="color-profile20280" />
+    <color-profile
+       name="Adobe-RGB--1998-"
+       xlink:href="../../../../../../../WINDOWS/system32/spool/drivers/color/AdobeRGB1998.icc"
+       id="color-profile20282" />
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.894427;stroke-linecap:round;stroke-linejoin:bevel;fill-opacity:1"
+       d="M 0,0 V 99.999993 H 80 L 72,70 16,75 V 60 h 8 L 28,40 H 16 V 25 l 56,5 8,-30 z"
+       id="path2242"
+       sodipodi:nodetypes="ccccccccccccc" />
+    <path
+       style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.948683;stroke-linecap:round;stroke-linejoin:bevel;fill-opacity:1"
+       d="M 144,10 180,0 V 100 H 99 l -9,-30 36,10 h 36 z"
+       id="path2448"
+       sodipodi:nodetypes="cccccccc" />
+    <path
+       style="fill:#ffffff;fill-rule:evenodd;stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel;fill-opacity:1"
+       d="m 230,0 -40,100 40,-10 10,-40 10,40 40,10 L 250,0 Z"
+       id="path2450"
+       sodipodi:nodetypes="cccccccc" />
+  </g>
+</svg>

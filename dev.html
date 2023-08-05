@@ -1,14 +1,3 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio - Desarrollador de Software</title>
-    <!-- Enlaces a las hojas de estilo -->
-</head>
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -26,8 +15,23 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/styles_dev.css">
+    <link rel="stylesheet" href="css/styles_dev_header.css">
+    <link rel="stylesheet" href="css/styles_dev_home.css">
+    <link rel="stylesheet" href="css/styles_dev_about.css">
+    <link rel="stylesheet" href="css/styles_dev_projects.css">
+    <link rel="stylesheet" href="css/styles_dev_experience.css">
+    <link rel="stylesheet" href="css/styles_dev_curriculum.css">
+    <link rel="stylesheet" href="css/styles_dev_footer.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/python/python.min.js"></script>
+    <link rel="stylesheet" href="css/codemirror.css">
+
+    <!-- Agrega la fuente de los iconos de Font Awesome en el head del HTML -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
 </head>
 
@@ -37,8 +41,9 @@
     <header id="header">
         <div class="header-container">
 
+
             <div class="logo">
-                <h1 class="edwin-name"><span>Edwin</span> j Arevalo</h1>
+                <img class="edwin-logo" src="recurses/svg/logo.svg" onclick="window.location.href='index.html';" alt="">
             </div>
             <div class="icon-menu">
                 <div class="header-nav" onclick="viewMenu()">
@@ -54,7 +59,8 @@
                     <li><a href="#home">Inicio</a></li>
                     <li><a href="#about">Acerca de mi</a></li>
                     <li><a href="#projects">Proyectos</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#work-experience">Experiencia </a></li>
+                    <li class="cv"><a href="#curriculum-vitae">Descargar CV</a></li>
                 </ul>
             </nav>
 
@@ -67,30 +73,47 @@
         <section id="home">
 
             <div class="home-container">
-
-                <h1 class="title">!Hola¡ </h1>
-                <h3 class="subtitle">
-                    Soy Edwin j<span class="char-1">o</span><span class="char-2">h</span><span
-                        class="char-3">a</span><span class="char-4">n</span><span class="char-5">y</span>
-                    Arevalo
-                </h3>
-                <p class="text-ini">
-                    Como buen colombiano
-
-                    <span>
-                        <img crossorigin="anonymous" src="recurses/img/flag-colombia.png" alt="🇨🇴" draggable="false"
-                            tabindex="-1">
-                    </span>
-
-                    les comparto una trova
-                </p>
-                <p class="text"><span>♪♪♪</span> En la ingeniería civil y en la programación,
-                    el ingeniero fullstack muestra su devoción,
-                    construyendo sueños, con gran pasión,
-                    aportando con su conocimiento, habilidad
-                    y su mejor canción <span>♫♫♫</span>.</p>
+                <div class="container-left">
 
 
+                    <h1 class="title">!Hola¡ </h1>
+                    <h3 class="subtitle">
+                        Soy Edwin j<span class="char-1">o</span><span class="char-2">h</span><span
+                            class="char-3">a</span><span class="char-4">n</span><span class="char-5">y</span>
+                        Arevalo
+                    </h3>
+                    <p class="text-ini">
+                        Como buen colombiano
+
+                        <span>
+                            <img crossorigin="anonymous" src="recurses/img/flag-colombia.png" alt="🇨🇴"
+                                draggable="false" tabindex="-1">
+                        </span>
+
+                        les comparto una trova
+                    </p>
+                    <p class="text"><span>♪♪♪</span> En la ingeniería civil y en la programación,
+                        el ingeniero fullstack muestra su devoción,
+                        construyendo sueños, con gran pasión,
+                        aportando con su conocimiento, habilidad
+                        y su mejor canción <span>♫♫♫</span>.</p>
+                </div>
+
+                <div class="container-right">
+
+                    <div class="container-cv">
+
+                        <div class="container-cv-img">
+                            <img src="recurses/img/cv_inf.png" class="original1">
+                            <img src="recurses/img/cv_inf.png" class="original2">
+                            <img src="recurses/img/cv_inf.png" class="original3">
+                            <img src="recurses/img/cv.png" class="original4">
+                        </div>
+                        <div id="download-cv" class="download-cv">Descagar CV</div>
+
+                    </div>
+
+                </div>
 
             </div>
 
@@ -102,10 +125,19 @@
 
             <div id="about-container" class="about-container">
                 <div>
-                    <h2 class="title-section">Acerca de mi</h2>
+
+                    <h2 class="title-section right-aligned-heading">Acerca de mi</h2>
+
+                    <p class="description-section">¡Gracias por tomarte el tiempo de ver mi portafolio!
+
+                        Aprovechando que mi tecnología favorita es Python, y que
+                        eres curioso… ejecuta este script de Python en la consola ↓↓↓,
+                        para ver mi perfil profesional como programador, si no lo
+                        logras, escribe en la consola help para más información </p>
+
+
+
                     <div class="about-container-grid">
-
-
                         <div class="card">
                             <div class="upper-section">
 
@@ -118,8 +150,8 @@
                             </div>
                             <div class="lower-section">
                                 <h2>Desarrollador Fullstack Junior</h2>
-                                <p>Con experiencia en soluciones digitales para ingeniería civil y geotécnica. Asi como
-                                    desarrollo de prototipos de hardware </p>
+                                <p>Experiencia personal en diseño web, móvil, aplicaciones de escritorio y
+                                    automatización.</p>
                                 <div class="social-icons">
                                     <div class="container-iconos">
 
@@ -144,95 +176,467 @@
 
                                     </div>
                                 </div>
-                                <h3>Tecnología Favorita</h3>
-                                <p>Python</p>
+                                <h3>Tecnologías Favoritas</h3>
+                                <ul class="favorite-technology">
+                                    <li><i class="fa fa-tag" aria-hidden="true"></i>Python</li>
+                                    <li><i class="fa fa-tag" aria-hidden="true"></i>Firebase</li>
+                                    <li><i class="fa fa-tag" aria-hidden="true"></i>CSS</li>
+                                </ul>
                                 <h3>Hobbies</h3>
-                                <p>Lista de hobbies</p>
+                                <ul class="Hobbies">
+                                    <li><i class="fa fa-tag" aria-hidden="true"></i>Electronica</li>
+                                    <li><i class="fa fa-tag" aria-hidden="true"></i>Carpintería</li>
+                                </ul>
                             </div>
 
                         </div>
 
                         <div class="grid-console">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque voluptates possimus
-                            officia perferendis quod quam, aperiam quaerat enim! Assumenda accusamus beatae quo
-                            consequatur nesciunt unde officiis quasi perferendis dolore enim.
+                            <div class="grid-console-card">
+
+                                <div class="grid-console-card-sup">
+
+                                    <div class="point">
+                                        <div class="point-1"> </div>
+                                        <div class="point-2"> </div>
+                                        <div class="point-3"> </div>
+                                        <div class="point-4"> </div>
+                                    </div>
+
+                                    <span class="text-4">perfil.py </span>
+
+
+                                </div>
+                                <div class="editor-container">
+
+                                    <div id="editor"></div>
+                                </div>
+                                <div class="grid-console-card-inf">
+                                </div>
+
+
+
+
+                                <div class="grid-terminal-card">
+                                    <div class="terminal-body" id="terminal-body">
+                                        <div class="terminal-line">Microsoft Windows [Versión 10.0.22621.1992]</div>
+                                        <div class="terminal-line">(c) Microsoft Corporation. Todos los derechos
+                                            reservados.</div>
+
+
+
+
+                                        <div class="input-line">
+                                            <span class="terminal-prompt">C:\Users\Edwin Arevalo\portafolio&gt;</span>
+                                            <input type="text" id="command-input" />
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contenido de la sección Projects -->
+        <section id="projects">
+            <div class="projects-section">
+                <h2 class="title-section"> Proyectos</h2>
+                <p class="description-section">
+                    Te invito a descubrir una selección de mis proyectos más destacados. Cada uno de ellos representa un
+                    desafío creativo y técnico que me ha permitido desarrollar mis habilidades
+
+                </p>
+                <div class="gallery">
+
+                    <div class="image-container">
+                        <img src="recurses/img/projects/mpm-un-.jpeg" alt="Imagen 1" class="gallery-image" />
+                        <div class="image-details">
+                            <h2>Título de la imagen 1</h2>
+                            <p>Descripción de la imagen 1.</p>
+                            <p>Descripción de la imagen 1.</p>
+                            <p>Descripción de la imagen 1.</p>
+                            <p>Descripción de la imagen 1.</p>
+                            <div>
+                                <img class="gallery-icon" src="recurses/img/iconos/github.png" alt="">
+                                <img class="gallery-icon" src="recurses/img/iconos/terminal.png" alt="">
+                                <img class="gallery-icon" src="recurses/img/iconos/github.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repite los bloques para las otras imágenes -->
+                    <div class="image-container">
+                        <img src="recurses/img/projects/inggeodev-.jpeg" alt="Imagen 2" class="gallery-image" />
+                        <div class="image-details">
+                            <h2>Título de la imagen 1</h2>
+                            <p>Descripción de la imagen 1.</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="image-container">
+                        <img src="recurses/img/projects/club-pastelero-.jpg" alt="Imagen 3" class="gallery-image" />
+                        <div class="image-details">
+                            <h2>Titulo de la imagen</h2>
+                            <p>Descripción de la imagen.</p>
+                        </div>
+                    </div>
+
+                    <div class="image-container">
+                        <img src="recurses/img/projects/volcanapp.jpeg" alt="Imagen" class="gallery-image" />
+                        <div class="image-details">
+                            <h2>Titulo de la imagen</h2>
+                            <p>Descripción de la imagen.</p>
+                        </div>
+                    </div>
+
+                    <div class="image-container">
+                        <img src="recurses/img/projects/mpm-un.jpeg" alt="Imagen 2" class="gallery-image" />
+                        <div class="image-details">
+                            <h2>Título de la imagen 1</h2>
+                            <p>Descripción de la imagen 1.</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="image-container">
+                        <img src="recurses/img/projects/la-piragua.jpeg" alt="Imagen" class="gallery-image" />
+                        <div class="image-details">
+                            <h2>Titulo de la imagen</h2>
+                            <p>Descripción de la imagen.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+        <div class="projects-transition"></div>
+
+
+        <section id="work-experience">
+            <div class="experience-container">
+                <h2 class="title-section">Experiencia laboral</h2>
+
+                <p class="description-section">
+                    Te invito a descubrir las empresas donde he aportado valor con mis habilidades de programación
+                </p>
+
+                <div class="timeline-container">
+                    <!-- Experiencia 1 -->
+                    <div class="experience1">
+                        <div class="timeline-data">
+                            <div class="data-container">
+
+                                <h2>Ingeniero de diseño geotécnico</h2>
+                                <h3>Argeo Consultores Geotécnicos S.A.S</h3>
+                                <p>octubre 2019 - abril 2023 </p>
+                                <div class="card-description">
+
+
+                                    <h4>Función principal: Ingeniero a cargo de la elaboración de estudios geotécnicos.
+
+                                    </h4>
+                                    <p>Se aporto a la consolidación de la compañía realizando la actualización de
+                                        memorias
+                                        de cálculo de análisis geotécnicos, mediante script de Python para analizar y
+                                        Excel
+                                        para generar los reportes. También se implemento el software unificado para
+                                        gestión
+                                        de información de laboratorio y dibujo CAD automático.</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-img">
+                            <span></span>
+                            <img src="recurses/img/iconos/python.png" alt="">
+                            <img src="recurses/img/iconos/excel.png" alt="">
+                        </div>
+                        <div class="timeline-icon">
+                            <img src="recurses/img/iconos/ingeniero2.png" alt="">
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- Experiencia 2 -->
+                    <div class="experience2">
+
+                        <div class="timeline-icon2">
+                            <img src="recurses/img/iconos/ingeniero1.png" alt="">
+                        </div>
+                        <div class="timeline-img timeline-img2">
+                            <!--
+
+                                <img src="recurses/img/imagen_desarrollador_software.jpeg" alt="">
+                            -->
+                            <span></span>
+                            <img src="recurses/img/iconos/Arduino.png" alt="">
+                            <img src="recurses/img/iconos/esp32.jpg" alt="">
                         </div>
 
 
+                        <div class="timeline-data">
+
+                            <div class="data-container">
+
+                                <h2 class="text-align-right">Ingeniero de diseño geotécnico</h2>
+                                <h3 class="text-align-right">Diseños Geotécnicos S.A.S</h3>
+                                <p class="text-align-right">junio 2017 - septiembre 2019 </p>
+                                <div class="card-description">
+
+                                    <h4>Función principal: Ingeniero a cargo de la elaboración de estudios geotécnicos.
+                                    </h4>
+                                    <p>En el departamento de investigación e innovación cree varios prototipos basados
+                                        Arduino y esp32, de los cuales se destaca una barra sensora para medir
+                                        desplazamientos. Un Equipo de Ensayos PIT para medir velocidades de onda en
+                                        pilotes
+                                        de concreto. Un Equipo para medición de detonaciones en excavaciones.</p>
 
 
-
-
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+
+
+
+
+                    <!-- Experiencia 3 -->
+                    <div class="experience3">
+                        <div class="timeline-data">
+                            <div class="data-container">
+                                <h3>Auxiliar de ingeniería</h3>
+                                <p>Diseños Geotécnicos S.A.S</p>
+                                <p>octubre 2019 - abril 2023 </p>
+                                <div class="card-description">
+                                    <h4>Función principal: Programar y procesar información de exploración de campo,
+                                        digitación de planos e informes.</h4>
+                                    <p>Se aporto al crecimiento de la compañía, optimizando procesos digitales en
+                                        geotecnia
+                                        mediante macros en Visual Basic Excel, para recopilar información de
+                                        laboratorio,
+                                        almacenarla en una base de datos Access y generar reportes para informes.
+                                        También
+                                        diseño un software mediante macros en Visual Basic para dibujo automático de
+                                        detalles CAD de planos en AutoCAD.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-img">
+                            <span></span>
+                            <img src="recurses/img/iconos/vba.png" alt="">
+                            <img src="recurses/img/iconos/Autocad-Logo.png" alt="">
+                        </div>
+                        <div class="timeline-icon">
+                            <img src="recurses/img/iconos/auxiliar.png" alt="">
+                        </div>
+                    </div>
+
+
+
                 </div>
 
+
+            </div>
+        </section>
+        <div class="projects-transition"></div>
+
+        <section id="curriculum-vitae">
+            <div class="curriculum-container">
+                <h2 class="title-section">curriculum</h2>
+
+
+                <div class="data-section">
+                    <!--
+                        <div class="container-cv">
+                            <div class="container-cv-img">
+                                <img src="recurses/img/cv_inf.png" class="original1">
+                                <img src="recurses/img/cv_inf.png" class="original2">
+                                <img src="recurses/img/cv_inf.png" class="original3">
+                                <img src="recurses/img/cv.png" class="original4">
+                            </div>
+                            <div id="download-cv" class="download-cv">Descagar CV</div>
+                            
+                        </div>
+                    -->
+
+                    <div class="container-feedback">
+                        <p>¡Gracias por visitar mi portafolio! Tu opinión es muy importante para mí, ya que me ayuda a
+                            mejorar y seguir creciendo. Si tienes algún
+                            <span>
+
+                                comentario,
+                            </span>
+                            <span>
+                                sugerencia
+                            </span>
+                            o cualquier
+                            <span>feedback</span>
+                            sobre mi trabajo, no dudes en escribirlo. Aprecio mucho tu tiempo y estaré encantado de
+                            escuchar lo que piensas. ¡Gracias de antemano por tu valioso aporte!
+                        </p>
+                        <div class="feedback">
+                            <textarea name="comentarios" rows="10" cols="40"
+                                placeholder="Escribe tu comentario aquí"></textarea>
+                        </div>
+                        <div class="container-inputs">
+                            <input type="text" id="input" placeholder="Digita tu nombre">
+                            <div class="button-bg">
+                                <button id="btn" onclick="startAnimation()">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
         </section>
 
-        <section id="projects">
-            <!-- Contenido de la sección Projects -->
+        <div class="container-transition"></div>
+        <!--  
+            
+            EJEMPLO OK de animacion
+        https://css-tricks.com/animate-svg-path-changes-in-css/
+        este para el recorrido 
+            https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_motion_path
+        
+        -->
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio
-                sit veniam laborum dolores, impedit est! Hic aliquid repellat veniam
-                laboriosam, eius corrupti repellendus expedita vero voluptates!
-                Accusantium, ex molestiae.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio
-                sit veniam laborum dolores, impedit est! Hic aliquid repellat veniam
-                laboriosam, eius corrupti repellendus expedita vero voluptates!
-                Accusantium, ex molestiae.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio
-                sit veniam laborum dolores, impedit est! Hic aliquid repellat veniam
-                laboriosam, eius corrupti repellendus expedita vero voluptates!
-                Accusantium, ex molestiae.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio
-                sit veniam laborum dolores, impedit est! Hic aliquid repellat veniam
-                laboriosam, eius corrupti repellendus expedita vero voluptates!
-                Accusantium, ex molestiae.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio
-                sit veniam laborum dolores, impedit est! Hic aliquid repellat veniam
-                laboriosam, eius corrupti repellendus expedita vero voluptates!
-                Accusantium, ex molestiae.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio
-                sit veniam laborum dolores, impedit est! Hic aliquid repellat veniam
-                laboriosam, eius corrupti repellendus expedita vero voluptates!
-                Accusantium, ex molestiae.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio
-                sit veniam laborum dolores, impedit est! Hic aliquid repellat veniam
-                laboriosam, eius corrupti repellendus expedita vero voluptates!
-                Accusantium, ex molestiae.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio
-                sit veniam laborum dolores, impedit est! Hic aliquid repellat veniam
-                laboriosam, eius corrupti repellendus expedita vero voluptates!
-                Accusantium, ex molestiae.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio
-                sit veniam laborum dolores, impedit est! Hic aliquid repellat veniam
-                laboriosam, eius corrupti repellendus expedita vero voluptates!
-                Accusantium, ex molestiae.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio
-                sit veniam laborum dolores, impedit est! Hic aliquid repellat veniam
-                laboriosam, eius corrupti repellendus expedita vero voluptates!
-                Accusantium, ex molestiae.
+        <div class="efecto-ok">
+            <div class="svg-e svg"> </div>
+            <div class="svg-j svg"> </div>
+            <div class="svg-a svg"> </div>
+        </div>
 
-                &#x1F1E8;&#x1F1F4;
+        <div class="container-transition"></div>
 
-
-
-
-            </p>
-        </section>
 
     </div>
 
-    <section id="skills">
-        <!-- Contenido de la sección Skills -->
-    </section>
 
-    <footer>
-        <!-- Contenido del pie de página -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <p class="name">Edwin j Arévalo</p>
+            </div>
+            <div class="footer-section footer-section-lines">
+                <ul class="menu">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Acerca de mi</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#work-experience">Experiencia </a></li>
+                    <li class="cv"><a href="#curriculum-vitae">Descargar CV</a></li>
+                </ul>
+                <p class="copyright">© 2023 Todos los derechos reservados</p>
+            </div>
+            <div class="footer-section">
+                <p class="contact">Contáctame</p>
+                <div class="social-icons-footer">
+
+
+
+
+                    <a href="https://www.linkedin.com/in/edwin-j-arevalo" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/edwinar13" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="https://api.whatsapp.com/send?phone=573118994279&amp;text=Hola%20Edwin, " target="_blank">
+                        <i class="fab fa-whatsapp">
+                        </i>
+                    </a>
+
+                    <a href="mailto:edwinarevalo88@gmail.com">
+                        <i class="fa fa-envelope" aria-hidden="true">
+                        </i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
     </footer>
+
 
     <!-- Scripts JS -->
 
     <script src="js/script_dev.js"></script>
+    <script src="js/script_dev_home.js"></script>
+    <script src="js/script_dev_about.js"></script>
+    <script src="js/script_dev_projects.js"></script>
+    <script src="js/script_dev_experience.js"></script>
+    <script src="js/script_dev_curriculum.js"></script>
+    <script src="js/script_dev_footer.js"></script>
+
+    <script>
+        // Configura el editor de texto con el tema "material" (o el que desees)
+        const editor = CodeMirror(document.getElementById("editor"), {
+            value:
+                `#========================
+Mi perfil profesional dev
+#========================
+
+profile ="Desarrollador Fullstack Junior autodidacta"
+description ="Con experiencia en soluciones digitales\\npara optimización de procesos en ingeniería civil\\ny geotécnica.Así como en desarrollo de prototipos\\nde hardware."
+skills ={
+	'programming_language':['Python', 'Java', 'Visual' 'Basic', 'Arduino'],
+	'web_technologies':['HTML', 'CSS', 'JavaScript', 'Python-Flask'],
+	'mobile_technologies':['Android', 'Firebase'],
+	'databases': ['MySQL', 'MongoDB'],
+	'development_tools': ['Github', 'VS Code', 'Figma', 'Git', 'Scrum', 'Esp32', 'Arduino ide']
+}
+def showSkill(category, data):
+	print("→→→ {}:".format(category))
+	text =""
+	no_skill=0
+	for skill in data:
+		text = "{} {},".format(text, skill)
+		if no_skill == 4:
+			text = "{}\\n		".format(text)
+		no_skill += 1
+	text = text[:-1]
+	print("		◄ {} ►".format(text))
+print("{}'\\n|| {} ||\\n{}\\n{}".format("▼"*53,profile,description,"▲"*53))
+print("╔{}╗".format("═"*60))
+print("SKILL:")
+for category in skills:
+	data = skills[category]
+	showSkill(category=category, data=data)
+print("╚{}╝".format("═"*60))`,
+            mode: "text/plain",
+            theme: "3024-night",
+            lineNumbers: true,
+            autofocus: false,
+        });
+    </script>
+
 </body>
 
 </html>

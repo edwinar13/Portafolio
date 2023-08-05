@@ -1,0 +1,117 @@
+/**************************************************************************************/
+/********************<!--Fondo home / about / projects -->*****************************/
+/**************************************************************************************/
+.bg-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgba(3, 3, 3, 0.2) fixed no-repeat 50% 50%;
+  background-size: cover;
+  background-image: url(/recurses/img/en_construcion.png);
+
+  height: 100vh;
+}
+
+
+/**************************************************************************************/
+/************************<!-- Contenido del home -->*********************************/
+/**************************************************************************************/
+
+
+#home {
+  height: calc(100% - 80px);  
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.home-container {
+  padding-left: 12%;
+  padding-right: 12%;
+  position: relative;
+  
+}
+
+
+
+
+.title {
+  font-size: 100px;
+  margin: 0;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  margin: 0;
+  margin-top: 2%;
+  font-size: 50px;
+}
+
+.subtitle span {
+  color: rgb(26, 150, 150);
+}
+
+
+
+
+
+
+
+/* Media query para el diseño responsivo */
+@media (max-width: 700px) {
+  
+  .home-container {
+    padding-top: 70px;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  
+  .title {
+    font-size: 70px;
+  }
+
+  .subtitle {
+    font-size: 35px;
+  }
+
+
+  .text-ini {
+    font-size: 20px;
+
+  }
+
+
+
+
+
+
+
+}
+
+@media (max-width: 550px) {
+
+  .home-container {
+
+    padding-top: 70px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 100px;
+  }
+
+  .title {
+    font-size: 70px;
+  }
+
+  .subtitle {
+    font-size: 35px;
+  }
+
+
+
+  
+
+
+}

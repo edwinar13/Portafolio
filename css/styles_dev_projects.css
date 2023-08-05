@@ -1,0 +1,118 @@
+#projects {
+  margin-left: 4%;
+  margin-right: 4%;
+  padding-top: 100px;
+}
+
+.projects-section {
+
+}
+
+
+
+/* Estilo para el contenedor de la galería */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+  padding: 30px 50px;
+}
+
+/* Estilo para cada imagen en la galería */
+.image-container {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 3px 4px 20px rgb(122, 121, 110, 0.5);
+  flex-basis: calc(25%);
+  min-width: 300px;
+}
+
+
+/* Estilo para la imagen */
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  transition: filter 0.3s ease;
+  object-fit: cover;
+
+}
+
+
+/* Estilo para el detalle de la imagen (inicialmente oculto) */
+.image-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+
+.image-container:hover .gallery-image {
+  filter: brightness(0.3);
+  /* Oscurecer la imagen al 50% */
+  transition: filter 0.4s ease;
+}
+
+.image-container:hover .image-details {
+  transform: translateY(0);
+}
+
+
+/* Estilo para la imagen expandida */
+.image-container.expanded {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  cursor: zoom-out;
+  width: 100%;
+  height: 100%;
+  transition: width 0.5s ease;
+  transition: height 0.5s ease;
+}
+
+/* Estilo para el botón de cerrar */
+.image-container.expanded .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+}
+
+/* Estilo para el título y descripción de la imagen expandida */
+.image-container.expanded .image-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: white;
+}
+
+.image-container.expanded h2 {
+  margin-top: 0;
+}
+
+.image-container.expanded p {
+  margin-bottom: 0;
+}
+
+
+
+.gallery-icon {
+  width: 15px;
+  height: 15px;
+}
+
