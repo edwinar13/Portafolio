@@ -155,9 +155,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding-left: 4%;
-    padding-right: 4%;
   }
 
 
@@ -183,6 +180,18 @@ body {
 
 
 
+/* Media query para el diseño responsivo */
+@media (max-width: 550px) {
+
+
+
+  .header-container {
+
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+}
 
 
 
@@ -195,26 +204,28 @@ body {
   padding-top: 50px;
   font-size: 30px;
   margin-left: auto;
-
-
 }
 
 .description-section {
   color: rgb(50, 50, 50);
-  text-align: center;
+  text-align: left;
   margin: 0px;
   padding: 20px;
   font-size: 20px;
+  font-weight: 300;
   max-width: 1000px;
-  margin: auto;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.ts-white{
+  color: antiquewhite;
 }
 
 
 
-
-
 .container-transition {
-  height: 150px;
+  height: 80px;
 }
 
 @media (max-width: 890px) {

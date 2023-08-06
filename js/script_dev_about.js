@@ -124,3 +124,18 @@ function printHelp() {
 
 }
 
+
+
+const toggleSwitch = document.getElementById("toggleSwitch");
+const cardFront = document.querySelector(".card-2 .front");
+const cardBack = document.querySelector(".card-2 .back");
+
+toggleSwitch.addEventListener("change", () => {
+  if (toggleSwitch.checked) {
+    cardFront.style.transform = " rotateY(180deg)";
+    cardBack.style.transform = " rotateY(360deg)";
+  } else {
+    cardFront.style.transform = " rotateY(0deg)";
+    cardBack.style.transform = " rotateY(180deg)";
+  }
+});

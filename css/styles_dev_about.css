@@ -6,17 +6,18 @@
 
 
 #about {
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-left: 10%;
+  margin-right: 10%;
   padding-top: 100px;
 }
 
 .about-container {
-  height: 100%;
-  width: 60%;
+
+  width: 100%;
   border-radius: 5px;
   margin-bottom: 100px;
   background-color: #ffffff;
+  background: radial-gradient(circle, rgb(14, 40, 53) 0%, rgba(14, 40, 53, 1) 38%, rgba(0, 0, 0, 1) 100%);
   box-shadow: 5px 5px 20px 1px rgb(119, 119, 119, 0.5);
   transition: width 0.5s ease;
 }
@@ -27,13 +28,20 @@
 }
 
 
-
+.btn-help {
+  background-color: brown;
+  border-radius: 5px;
+  padding: 0px 2px;
+  font-style: italic;
+}
 
 
 
 .about-container-grid {
   display: flex;
-  padding: 30px 50px;
+  padding: 10px 30px;
+  max-width: 1000px;
+  margin: auto;
 
 
 }
@@ -46,7 +54,7 @@
   width: 300px;
   max-width: 300px;
   min-width: 300px;
-  margin-right: 20px;
+  margin-right: 30px;
   background-color: #fff7ee;
   border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -119,13 +127,12 @@
   text-align: center;
   margin: 5px;
   padding: 5px;
-  background-color: rgb(159, 196, 196);
-  background: linear-gradient(45deg, rgb(159, 196, 196, 0.644), rgba(159, 196, 196));
-  border-radius: 30px;
+  border: 1px solid rgb(77, 77, 77);
+  border-radius: 4px;
 
 }
 
-.favorite-technology li i{
+.favorite-technology li i {
   color: rgb(100, 100, 100);
   font-size: 12px;
   padding-right: 5px;
@@ -145,13 +152,13 @@
   text-align: center;
   margin: 0 5px;
   padding: 5px;
-  background: linear-gradient(45deg, rgb(187, 204, 157), rgba(187, 204, 157, 0.644));
-  border-radius: 30px;
+  border: 1px solid rgb(77, 77, 77);
+  border-radius: 4px;
 
 }
 
 
-.Hobbies li i{
+.Hobbies li i {
   color: rgb(100, 100, 100);
   font-size: 12px;
   padding-right: 5px;
@@ -275,6 +282,13 @@
   height: 100%;
   border-radius: 20px;
 
+
+}
+
+.grid-console-card h3 {
+  margin: 0;
+  margin: 10px 0 5px 0;
+  color: #ccc;
 
 }
 
@@ -411,10 +425,10 @@
   display: flex;
   flex-direction: column;
   height: 250px;
-  margin-top: 20px;
   overflow: hidden;
   width: 100%;
-  box-shadow: 0 4px 8px rgba(126, 126, 126, 0.651);
+  box-shadow: 0 4px 8px rgba(18, 23, 78, 0.651);
+  border: 1px solid rgb(119, 119, 119, 0.5);
 }
 
 .terminal-body {
@@ -491,3 +505,291 @@
 .terminal-body::-webkit-scrollbar-thumb:hover {
   background-color: #555;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+
+
+
+.container-switch {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.container-switch p {
+  color: #ccc;
+  font-weight: 300;
+  margin: 2px 20px;
+
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c95a1a;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 25px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked+.slider {
+  background-color: #960101;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #960101;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(32px);
+  -ms-transform: translateX(32px);
+  transform: translateX(32px);
+}
+
+/*
+width: auto;
+min-width: 250px;
+flex-grow: 1;
+*/
+
+
+
+.about-right {
+  width: 100%;
+  perspective: 1000px;
+  /* Agrega perspectiva a la tarjeta */
+  transition: transform 1s;
+  /* Agrega transición para el volteo */
+}
+
+
+.card-2 {
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+  /* Agrega perspectiva a la tarjeta */
+  transition: transform 1s;
+  /* Agrega transición para el volteo */
+
+}
+
+.card-2 .side {
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  /* Evita que el lado trasero se muestre por defecto */
+
+
+  transition: 0.5s;
+}
+
+.card-2 .front {
+
+  transform: rotateY(180deg);
+  /* Voltea el lado trasero 180 grados */
+
+}
+
+.card-2 .back {
+
+  transform: rotateY(0deg);
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.instructions {
+  color: #ccc;
+  text-align: center;
+  margin: 0px;
+  padding-top: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+
+
+
+
+
+
+.description-skill {
+  margin: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+/*  BOTTON SKILLS */
+
+
+
+.bottons-selected{
+  margin: 20px 0 40px 0;  
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  
+}
+
+.btn-skill{
+  padding: 5px 10px;
+  border: 1px solid #555;
+  min-width: 40px;
+  cursor: pointer;
+  border-radius: 15px;
+  border-color:  rgb(193, 255, 234);
+  background-color:  rgba(193, 255, 234, 0.15);
+  text-align: center;
+}
+
+
+.btn-skill:hover{
+  color: #222;
+  background: rgb(193, 255, 234);
+  border-color:  rgb(193, 255, 234);
+  box-shadow: 0px 0px 20px 1px rgb(119, 119, 119, 0.5);
+}
+
+
+
+.btn-skill-selected{
+  color: #222;
+  background: radial-gradient(circle, rgb(193, 255, 234) 38%, rgb(152, 212, 192) 100%);
+  border-color:  rgb(193, 255, 234);
+}
+
+
+
+
+
+/*  CARD SKILLS  */
+.container-skill {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+
+}
+
+.card-skill {
+  border: 1px solid #444;
+  display: flex;
+  border-radius: 4px;
+}
+
+.card-skill img {
+  height: 30px;
+  margin: auto;
+  margin-left: 10px;
+}
+
+
+.card-skill p {
+  margin: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+/*
+<h2 class="title-skill">Desarrollador Fullstack Junior autodidacta</h2>
+<p class="description-skill">Con experiencia en soluciones digitales
+para optimización de procesos en ingeniería civil
+y geotécnica.Así como en desarrollo de prototipos
+de hardware.</p>
+
+<h3 class="sub-title">Lenguajes de programación</h3>
+<div class="programming-language">
+    <div card-skill>
+    <img src="recurses/img/skills/python.png" alt="">
+    <p> Python</p>
+    </div>
+    <div card-skill>
+    <img src="recurses/img/skills/java.png" alt="">
+    <p> Java</p>
+    </div>
+    <div card-skill>
+    <img src="recurses/img/skills/vba.png" alt="">
+    <p> VisualBasic</p>
+    </div>
+    <div card-skill>
+        <img src="recurses/img/skills/Arduino.png" alt="">
+        <p> Arduino</p>
+        </div>
+        </div>
+        
+        */

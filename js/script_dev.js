@@ -26,7 +26,7 @@ window.addEventListener('scroll', function () {
 
 
 
-
+/*
 let aboutContainer = $(".about-container")
 
 
@@ -43,37 +43,4 @@ window.addEventListener('scroll', function () {
 
 
 
-
-var indexPrev = 4
-var indexNext = 0
-let listCharacters = [$(".char-1"), $(".char-2"), $(".char-3"), $(".char-4"), $(".char-5")];
-var characterPrev = null;
-var characterNext = null;
-
-
-function updateCharacter() {
-  characterPrev = listCharacters[indexPrev]
-  characterNext = listCharacters[indexNext]
-
-  characterPrev.removeClass("show");
-  characterPrev.addClass("hide");
-
-  characterNext.removeClass("hide");
-  characterNext.addClass("show");
-
-  indexPrev = indexNext
-  indexNext += 1;
-
-  if (indexNext >= 5) {
-    indexPrev = 4;
-    indexNext = 0;
-  }
-
-}
-
-updateCharacter();
-setInterval(updateCharacter, 800);
-
-
-
-
+*/

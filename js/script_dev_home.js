@@ -1,6 +1,42 @@
 
 
+
+var indexPrev = 2
+var indexNext = 0
+let listCharacters = [$(".char-1"), $(".char-2"), $(".char-3")];
+var characterPrev = null;
+var characterNext = null;
+
+
+function updateCharacter() {
+  characterPrev = listCharacters[indexPrev]
+  characterNext = listCharacters[indexNext]
+
+  characterPrev.removeClass("show"); 
+  characterNext.addClass("show");
+
+  indexPrev = indexNext
+  indexNext += 1;
+
+  if (indexNext >= 3) {
+    indexPrev = 2;
+    indexNext = 0;
+  }
+
+}
+
+updateCharacter();
+setInterval(updateCharacter, 800);
+
+
+
+
+
+
+
+
 const downloadCv = document.querySelector('.download-cv');
+const imagesCv = document.querySelector('.container-cv-img');
 const images = document.querySelectorAll('.container-cv-img img');
 
 downloadCv.addEventListener('mouseover', () => {
@@ -11,6 +47,19 @@ downloadCv.addEventListener('mouseover', () => {
 });
 
 downloadCv.addEventListener('mouseout', () => {
+    images.forEach((img, index) => {
+        img.classList.remove(`transformed${index + 1}`);
+    });
+});
+
+imagesCv.addEventListener('mouseover', () => {
+    images.forEach((img, index) => {
+        img.classList.add(`transformed${index + 1}`);
+        console.log(`transformed${index + 1}`)
+    });
+});
+
+imagesCv.addEventListener('mouseout', () => {
     images.forEach((img, index) => {
         img.classList.remove(`transformed${index + 1}`);
     });
