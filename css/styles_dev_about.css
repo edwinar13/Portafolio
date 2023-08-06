@@ -39,9 +39,10 @@
 
 .about-container-grid {
   display: flex;
-  padding: 10px 30px;
+  padding:  30px;
   max-width: 1000px;
   margin: auto;
+  gap: 15px;
 
 
 }
@@ -619,8 +620,10 @@ flex-grow: 1;
 
 
 .card-2 {
+  /*
   width: 100%;
   height: 100%;
+  */
   perspective: 1000px;
   /* Agrega perspectiva a la tarjeta */
   transition: transform 1s;
@@ -629,8 +632,9 @@ flex-grow: 1;
 }
 
 .card-2 .side {
-  position: absolute;
+  /*position: absolute;*/
   width: 100%;
+  height: 100%;
   border-radius: 10px;
   backface-visibility: hidden;
   /* Evita que el lado trasero se muestre por defecto */

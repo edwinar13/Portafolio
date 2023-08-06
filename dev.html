@@ -133,16 +133,6 @@
                     <h2 class="title-section ts-white">Acerca de mi</h2>
 
 
-                    <div class="container-switch">
-                        <p>
-                            Tipo de visualización de perfil
-                        </p>
-                        <label class="switch">
-                            <input type="checkbox" id="toggleSwitch">
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-
                     <div class="about-container-grid">
                         <div class="card">
                             <div class="upper-section">
@@ -197,159 +187,106 @@
                         </div>
                       
                             <div class="card-2">
-                                <div class="side front">
 
-                                    <div class="grid-console-card">
-                                        <p class="instructions">
-                                            Aprovechando que mi tecnología favorita es Python, y que
-                                            eres curioso… ejecuta este script de Python en la consola ↓↓↓,
-                                            para ver mi perfil profesional como programador, si no lo
-                                            logras, escribe en el terminal <span class="btn-help">"help"</span> para más
-                                            información. </p>
-                                        </p>
-                                        <div class="grid-console-card-sup">
-
-                                            <div class="point">
-                                                <div class="point-1"> </div>
-                                                <div class="point-2"> </div>
-                                                <div class="point-3"> </div>
-                                                <div class="point-4"> </div>
-                                            </div>
-
-                                            <span class="text-4">perfil.py </span>
-
-
-                                        </div>
-                                        <div class="editor-container">
-
-                                            <div id="editor"></div>
-                                        </div>
-                                        <div class="grid-console-card-inf">
-                                        </div>
-                                        <h3>Terminal</h3>
-                                        <div class="grid-terminal-card">
-                                            <div class="terminal-body" id="terminal-body">
-                                                <div class="terminal-line">Microsoft Windows [Versión 10.0.22621.1992]
-                                                </div>
-                                                <div class="terminal-line">(c) Microsoft Corporation. Todos los derechos
-                                                    reservados.</div>
-
-
-
-
-                                                <div class="input-line">
-                                                    <span class="terminal-prompt">C:\Users\Edwin
-                                                        Arevalo\portafolio&gt;</span>
-                                                    <input type="text" id="command-input" />
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
                                 <div class="side back">
+                                    
                                     <p class="description-skill">Con experiencia en soluciones digitales
                                         para optimización de procesos en ingeniería civil
                                         y geotécnica.Así como en desarrollo de prototipos
                                         de hardware.</p>
 
                                     <div class="bottons-selected">
-                                        <div class="btn-1 btn-skill btn-left"> Escritorio </div>
-                                        <div class="btn-2 btn-skill"> Web </div>
-                                        <div class="btn-3 btn-skill"> Móvil </div>
-                                        <div class="btn-4 btn-skill"> DB </div>
-                                        <div class="btn-5 btn-skill"> Hardware </div>
-                                        <div class="btn-6 btn-skill btn-right"> Herramientas </div>
+                                        <div id="btn-1" class=" btn-skill "> Escritorio </div>
+                                        <div id="btn-2" class=" btn-skill"> Web </div>
+                                        <div id="btn-3" class=" btn-skill"> Móvil </div>
+                                        <div id="btn-4" class=" btn-skill"> DB </div>
+                                        <div id="btn-5" class=" btn-skill"> Hardware </div>
+                                        <div id="btn-6" class=" btn-skill "> Herramientas </div>
+                                        <div id="btn-7" class=" btn-skill "> Todos </div>
                                     </div>
 
 
 
-                                    <div class="container-skill">
-                                        <div class="card-skill">
+                                    <div class="container-skill" >
+                                        <div class="card-skill destock web hardware">
                                             <img src="recurses/img/skills/python.png" alt="">
                                             <p> Python</p>
                                         </div>
-                                        <div class="card-skill">
+                                        <div class="card-skill destock mobile ">
                                             <img src="recurses/img/skills/java.png" alt="">
                                             <p> Java</p>
                                         </div>
-                                        <div class="card-skill">
+                                        <div class="card-skill destock">
                                             <img src="recurses/img/skills/vba.png" alt="">
                                             <p> VisualBasic</p>
                                         </div>
 
-                                        <div class="card-skill">
+                                        <div class="card-skill web">
                                             <img src="recurses/img/skills/html-5.png" alt="">
                                             <p> HTML</p>
                                         </div>
-                                        <div class="card-skill">
+                                        <div class="card-skill web">
                                             <img src="recurses/img/skills/css-3.png" alt="">
                                             <p> CSS</p>
                                         </div>
-                                        <div class="card-skill">
+                                        <div class="card-skill web">
                                             <img src="recurses/img/skills/js.png" alt="">
                                             <p> JavaScript</p>
                                         </div>
-                                        <div class="card-skill">
+                                        <div class="card-skill web">
                                             <img src="recurses/img/skills/flask.png" alt="">
                                             <p> Flask</p>
                                         </div>
 
-                                        <div class="card-skill">
+                                        <div class="card-skill mobile hardware">
                                             <img src="recurses/img/skills/android_.png" alt="">
                                             <p> Android</p>
                                         </div>
-                                        <div class="card-skill">
+                                        <div class="card-skill mobile hardware">
                                             <img src="recurses/img/skills/firebase.png" alt="">
                                             <p> Firebase</p>
                                         </div>
 
 
-                                        <div class="card-skill">
+                                        <div class="card-skill hardware">
                                             <img src="recurses/img/skills/esp32.jpg" alt="">
                                             <p> Esp32</p>
                                         </div>
-                                        <div class="card-skill">
+                                        <div class="card-skill hardware">
                                             <img src="recurses/img/skills/Arduino.png" alt="">
                                             <p> Arduino</p>
                                         </div>
 
-                                        <div class="card-skill">
+                                        <div class="card-skill destock db">
                                             <img src="recurses/img/skills/MySQL.png" alt="">
                                             <p> MySQL</p>
                                         </div>
-                                        <div class="card-skill">
+                                        <div class="card-skill web db">
                                             <img src="recurses/img/skills/mongodb.png" alt="">
                                             <p> MongoDB</p>
                                         </div>
 
 
-                                        <div class="card-skill">
+                                        <div class="card-skill tool">
                                             <img src="recurses/img/skills/github.png" alt="">
                                             <p> Github</p>
                                         </div>
-                                        <div class="card-skill">
+                                        <div class="card-skill tool">
                                             <img src="recurses/img/skills/Git.png" alt="">
                                             <p> git</p>
                                         </div>
 
-                                        <div class="card-skill">
+                                        <div class="card-skill tool">
                                             <img src="recurses/img/skills/Visual_Studio_Code.png" alt="">
                                             <p> VS Code</p>
                                         </div>
 
-                                        <div class="card-skill">
+                                        <div class="card-skill tool">
                                             <img src="recurses/img/skills/Figma.png" alt="">
                                             <p> Figma</p>
                                         </div>
 
-                                        <div class="card-skill">
-                                            <img src="recurses/img/skills/Git.png" alt="">
-                                            <p> git</p>
-                                        </div>
-
-                                        <div class="card-skill">
+                                        <div class="card-skill tool">
                                             <img src="recurses/img/skills/scrum.png" alt="">
                                             <p> Scrum</p>
                                         </div>
@@ -357,6 +294,7 @@
                                     </div>
 
 
+                                
                                 </div>
 
                             </div>

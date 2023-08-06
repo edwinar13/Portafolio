@@ -1,132 +1,219 @@
-const terminalBody = document.getElementById("terminal-body");
-const commandInput = document.getElementById("command-input");
-const inputLine = document.querySelector(".input-line");
+
+
+const btn1 = document.getElementById("btn-1");
+const btn2 = document.getElementById("btn-2");
+const btn3 = document.getElementById("btn-3");
+const btn4 = document.getElementById("btn-4");
+const btn5 = document.getElementById("btn-5");
+const btn6 = document.getElementById("btn-6");
+const btn7 = document.getElementById("btn-7");
+
+
+const btns = document.querySelectorAll('.btn-skill');
+const cards = document.querySelectorAll('.card-skill');
+const cardDestock = document.querySelectorAll('.destock');
+const cardWeb = document.querySelectorAll('.web');
+const cardMobile = document.querySelectorAll('.mobile');
+const cardDb = document.querySelectorAll('.db');
+const cardHardware = document.querySelectorAll('.hardware');
+const cardTools = document.querySelectorAll('.tool');
 
 
 
-commandInput.addEventListener("keydown", (event) => {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    const command = commandInput.value.toLowerCase();
-    if (command == "python perfil.py") {
-      printCommand(command);
-      printProfile()
-    } else if(command == "help"){
-      printHelp();
-    }
-     else {
-      printCommand(command);
-    }
-  }
 
 
 
+btn1.addEventListener('click', () => {
+  clearCardBtn()
+  btn1.classList.add(`btn-skill-selected`);
+  cardDestock.forEach(cardVisible => {
+    cardVisible.style.display = "flex";
+  });
+});
+
+
+
+btn2.addEventListener('click', () => {
+  clearCardBtn()
+  btn2.classList.add(`btn-skill-selected`);
+  cardWeb.forEach(cardVisible => {
+    cardVisible.style.display = "flex";
+    
+  });
+});
+
+
+btn3.addEventListener('click', () => {
+  clearCardBtn()
+  btn3.classList.add(`btn-skill-selected`);
+  cardMobile.forEach(cardVisible => {
+    cardVisible.style.display = "flex";
+    
+  });
+});
+
+
+
+btn4.addEventListener('click', () => {
+  clearCardBtn()
+  btn4.classList.add(`btn-skill-selected`);
+  cardDb.forEach(cardVisible => {
+    cardVisible.style.display = "flex";
+
+  });
+});
+
+
+btn5.addEventListener('click', () => {
+  clearCardBtn()
+  btn5.classList.add(`btn-skill-selected`);
+  cardHardware.forEach(cardVisible => {
+    cardVisible.style.display = "flex";
+
+  });
+});
+
+btn6.addEventListener('click', () => {
+  clearCardBtn()
+  btn6.classList.add(`btn-skill-selected`);
+  cardTools.forEach(cardVisible => {
+    cardVisible.style.display = "flex";
+
+  });
+});
+
+
+
+
+
+
+btn7.addEventListener('click', () => {
+  btns.forEach(btn => {
+    btn.classList.remove(`btn-skill-selected`);
+  }); 
+  cards.forEach(card => {
+    card.style.display = "flex";
+  }); 
 
 });
 
 
-function printCommand(command) {
-  const newLine = document.createElement("div");
-  newLine.className = "terminal-line";
-  newLine.innerHTML = `<span class="terminal-prompt">C:\\Users\\Edwin Arevalo\\portafolio&gt;</span> ${command}`;
-  terminalBody.insertBefore(newLine, inputLine);
-  commandInput.value = "";
-  //commandInput.focus(); // Mantener el foco en el input
-  //terminalBody.scrollTop = terminalBody.scrollHeight;
+
+
+
+function clearCardBtn() {
+  btns.forEach(btn => {
+    btn.classList.remove(`btn-skill-selected`);
+  });
+  cards.forEach(card => {
+    card.style.display = "none";
+  });  
 }
 
-function printProfile() {
-
-
-
-  let listData = [
-    '▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼',
-    '|| Desarrollador Fullstack Junior autodidacta ||',
-    'Con experiencia en soluciones digitales',
-    'para optimización de procesos en ingeniería civil',
-    'y geotécnica.Así como en desarrollo de prototipos',
-    'de hardware.',
-    '▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲', 
-    '╔═══════════════════════════════════════════════════╗',
-    '&nbsp &nbsp &nbsp &nbsp SKILL:',
-    '→→→ programming_language:',
-    '&nbsp &nbsp ◄  Python, Java, VisualBasic, Arduino ►',
-    '→→→ web_technologies:',
-    '&nbsp &nbsp ◄  HTML, CSS, JavaScript, Python-Flask ►',
-    '→→→ mobile_technologies:',
-    '&nbsp &nbsp ◄  Android, Firebase ►',
-    '→→→ databases:',
-    '&nbsp &nbsp ◄  MySQL, MongoDB ►',
-    '→→→ development_tools:',
-    '&nbsp &nbsp ◄  Github, VS Code, Figma, Git, Scrum,',
-    '&nbsp &nbsp Esp32, Arduino ide ►',
-    '╚═══════════════════════════════════════════════════╝',
 
 
 
 
-  ]
 
-  for (let index = 0; index < listData.length; index++) {
-    const textAdd = listData[index];
 
-    const newLine = document.createElement("div");
-    newLine.className = "terminal-line";
-    if(index == 0 || index==6 || index==7 || index==20){
-      newLine.innerHTML = `<span class="terminal-prompt-tag">${textAdd}</span>`;
+
+
+
+
+
+/**
+ 
+img.classList.add(`transformed${index + 1}`);
+img.classList.remove(`transformed${index + 1}`);
+
+
+
+const downloadCv = document.querySelector('.download-cv');
+const imagesCv = document.querySelector('.container-cv-img');
+const images = document.querySelectorAll('.container-cv-img img');
+
+downloadCv.addEventListener('mouseover', () => {
+  images.forEach((img, index) => {
+    img.classList.add(`transformed${index + 1}`);
+    console.log(`transformed${index + 1}`)
+  });
+});
+
+downloadCv.addEventListener('mouseout', () => {
+  images.forEach((img, index) => {
+    img.classList.remove(`transformed${index + 1}`);
+  });
+});
+
+imagesCv.addEventListener('mouseover', () => {
+  images.forEach((img, index) => {
+    img.classList.add(`transformed${index + 1}`);
+    console.log(`transformed${index + 1}`)
+  });
+});
+
+imagesCv.addEventListener('mouseout', () => {
+  images.forEach((img, index) => {
+    img.classList.remove(`transformed${index + 1}`);
+  });
+});
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * 
+
+// Agregar evento clic a cada imagen para expandirla
+galleryImages.forEach(image => {
+  image.addEventListener('click', () => {
+    image.parentElement.classList.toggle('expanded');  
+    if(bandera==true){
+      disableVerticalScroll();
+      bandera =false
     }else{
-      newLine.innerHTML = `<span class="terminal-prompt-profile">${textAdd}</span>`;
+      enableVerticalScroll();
+      bandera = true
     }
+    
+  });
+  
+});
 
-    terminalBody.insertBefore(newLine, inputLine);
-  }
 
-  commandInput.value = "";
+
+function disableVerticalScroll() {
+  document.body.style.overflowY = 'hidden';
 }
 
-function printHelp() {
-
-
-
-  let listData = [
-    '■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■',
-    '||                        Ayuda                     ||',
-    '¡hola! he creado este editor de texto interactivo con ',
-    'la temática de Python para poder mostrarte mi perfil, ',
-    'lamento que no tenga una compatibilidad de 100% con',
-    'Python, pero estoy trabajando en ello :), por el',
-    'momento el único comando valido es para ejecutar el ',
-    'script, para lo cual en esta misma consola deberás ',
-    'digitar python perfil.py ',
-    '■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■',
-
-
-  ]
-
-  for (let index = 0; index < listData.length; index++) {
-    const textAdd = listData[index];
-
-    const newLine = document.createElement("div");
-    newLine.className = "terminal-line";
-    if(index == 0 || index==9 ){
-      newLine.innerHTML = `<span class="terminal-help-tag">${textAdd}</span>`;
-    }else{
-      newLine.innerHTML = `<span class="terminal-help-profile">${textAdd}</span>`;
-    }
-
-    terminalBody.insertBefore(newLine, inputLine);
-  }
-
-  commandInput.value = "";
-  //
-  //commandInput.focus(); // Mantener el foco en el input
-  //terminalBody.scrollTop = terminalBody.scrollHeight;
-
+// Desbloquear el scroll vertical
+function enableVerticalScroll() {
+  document.body.style.overflowY = 'auto';
 }
 
 
 
-const toggleSwitch = document.getElementById("toggleSwitch");
+
+
+
+
+
+
+
 const cardFront = document.querySelector(".card-2 .front");
 const cardBack = document.querySelector(".card-2 .back");
 
@@ -139,3 +226,5 @@ toggleSwitch.addEventListener("change", () => {
     cardBack.style.transform = " rotateY(180deg)";
   }
 });
+
+*/
