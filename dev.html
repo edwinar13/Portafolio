@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/styles_dev_feedback.css">
     <link rel="stylesheet" href="css/styles_dev_footer.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
+
 
 
 
@@ -44,8 +44,8 @@
             <div class="logo">
                 <img class="edwin-logo" src="recurses/svg/logo.svg" onclick="window.location.href='index.html';" alt="">
             </div>
-            <div class="icon-menu">
-                <div class="header-nav" onclick="viewMenu()">
+            <div class="icon-menu" id="menu-button">
+                <div class="header-nav">
                     <div class="color-yes"></div>
                     <div class="color-no"></div>
                     <div class="color-yes"></div>
@@ -53,6 +53,20 @@
                     <div class="color-yes"></div>
                 </div>
             </div>
+            <div class="overlay" id="overlay">
+                <div class="menu-card">
+                    <ul>
+                        <li class="close-button"><a href="#home">Inicio</a></li>
+                        <li class="close-button"><a href="#about">Acerca de mi</a></li>
+                        <li class="close-button"><a href="#projects">Proyectos</a></li>
+                        <li class="close-button"><a href="#work-experience">Experiencia</a></li>
+                        <li class="close-button"><a href="#feedback">Feedback</a></li>
+                        <li class="close-button"><a href="#home">Descargar CV</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
             <nav class="nav-menu">
                 <ul>
                     <li><a href="#home">Inicio</a></li>
@@ -300,30 +314,6 @@
 
                 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
 
 
@@ -341,10 +331,6 @@
                 <div class="gallery">
 
 
-
-
-
-
                     <div class="image-container">
                         <img src="recurses/img/projects/mpm-un-.jpeg" alt="Imagen 1" class="gallery-image" />
                         <div class="image-details">
@@ -353,12 +339,16 @@
                                 ejecutar análisis numéricos y método del punto material (MPM).</p>
                             <div class="container-info">
                                 <div class="skill">
+                                    <i class="fa fa-tag" aria-hidden="true"></i>
                                     <h5>Python</h5>
                                     <h5>PySide6</h5>
                                 </div>
                                 <div class="links">
                                     <a href="https://github.com/edwinar13/MPM-UN/tree/alpha" target="_blank">
                                         <img class="icon" src="recurses/img/iconos/github.png" alt="">
+                                    </a>
+                                    <a href="https://youtu.be/Qk8DzIMOPb0" target="_blank">
+                                        <img class="icon" src="recurses/img/iconos/youtube.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -373,6 +363,7 @@
                                 relacionado a la gestión de información de exploraciones geotecnias.</p>
                             <div class="container-info">
                                 <div class="skill">
+                                    <i class="fa fa-tag" aria-hidden="true"></i>
                                     <h5>HTML</h5>
                                     <h5>CSS</h5>
                                     <h5>JS</h5>
@@ -397,6 +388,7 @@
                                 y artículos de repostería, y una cocina interactiva que incluye aparatos con IoT.</p>
                             <div class="container-info">
                                 <div class="skill">
+                                    <i class="fa fa-tag" aria-hidden="true"></i>
                                     <h5>HTML</h5>
                                     <h5>CSS</h5>
                                     <h5>JS</h5>
@@ -423,6 +415,7 @@
                                 orienta a reducir los efectos naturales de las erupciones volcánicas.</p>
                             <div class="container-info">
                                 <div class="skill">
+                                    <i class="fa fa-tag" aria-hidden="true"></i>
                                     <h5>Java</h5>
                                     <h5>Firebase</h5>
                                 </div>
@@ -448,6 +441,7 @@
                                 en los pilotes en concreto.</p>
                             <div class="container-info">
                                 <div class="skill">
+                                    <i class="fa fa-tag" aria-hidden="true"></i>
                                     <h5>Arduino</h5>
                                     <h5>Python</h5>
                                 </div>
@@ -472,130 +466,155 @@
 
 
         <section id="work-experience">
+            <div class="experience-container">
 
-            <h2 class="title-section">Experiencia laboral</h2>
+                <h2 class="title-section">Experiencia laboral</h2>
 
-            <p class="description-section">
-                Te invito a descubrir las empresas donde he aportado valor con mis habilidades de programación
-            </p>
-            <div class="circles">
+                <p class="description-section">
+                    Te invito a descubrir las empresas donde he aportado valor con mis habilidades de programación
+                </p>
+                <div class="circles">
 
-                <div class="circle" onclick="showExperience(1)"></div>
-                <div class="circle" onclick="showExperience(2)"></div>
-                <div class="circle" onclick="showExperience(3)"></div>
+                    <div class="circle" onclick="showExperience(1)"></div>
+                    <div class="circle" onclick="showExperience(2)"></div>
+                    <div class="circle" onclick="showExperience(3)"></div>
 
-            </div>
+                </div>
 
-            <div class="container-slider">
-                <div class="area-slider">
-                    <div class="experience-slide" id="experience1">
-                        <div class="grid-container">
-                            <div class="cell cell-exp1 cell-date">
-                                <p><span> Oct</span>19 <br> <span>Abr</span>23</p>
+                <div class="container-slider">
+                    <div class="area-slider">
+                        <div class="experience-slide" id="experience1">
+                            <div class="grid-container">
+                                <div class="cell cell-exp1 cell-date">
+                                    <p><span> Oct</span>19 <br> <span>Abr</span>23</p>
+                                </div>
+
+                                <div class="cell cell-exp1 cell-position">
+                                    <p> Ingeniero de diseño geotécnico</p>
+                                </div>
+                                <div class="cell cell-exp1 cell-company">
+                                    <p> Argeo Consultores Geotécnicos S.A.S</p>
+                                </div>
+                                <div class="cell cell-exp1 cell-function">
+                                    <p> <span> Función principal:</span><br> Ingeniero a cargo de la elaboración de
+                                        estudios
+                                        geotécnicos.</p>
+                                </div>
+                                <div class="cell cell-exp1 cell-description desc-1">
+                                    <h4>PYTHON</h4>
+                                    <p>Análisis geotécnicos </p>
+                                </div>
+                                <div class="cell cell-exp1 cell-description desc-2">
+                                    <h4>VBA</h4>
+                                    <p>Dibujo CAD automatizado</p>
+                                </div>
+
+                                <img class="cell cell-exp1 cell-img1" src="recurses/img/experiences/img-exp-1-1.png"
+                                    alt="">
+                                <img class="cell cell-exp1 cell-img2" src="recurses/img/experiences/img-exp-1-2.png"
+                                    alt="">
+                                <img class="cell cell-exp1 cell-img3" src="recurses/img/experiences/img-exp-1-3.png"
+                                    alt="">
+                                <img class="cell cell-exp1 cell-img4" src="recurses/img/experiences/img-exp-1-4.png"
+                                    alt="">
+                                <img class="cell cell-exp1 cell-img5" src="recurses/img/experiences/img-exp-1-5.png"
+                                    alt="">
+                                <img class="cell cell-exp1 cell-img6" src="recurses/img/experiences/img-exp-1-6.png"
+                                    alt="">
+                                <img class="cell cell-exp1 cell-img7" src="recurses/img/experiences/img-exp-1-7.png"
+                                    alt="">
+
                             </div>
-
-                            <div class="cell cell-exp1 cell-position">
-                                <p> Ingeniero de diseño geotécnico</p>
-                            </div>
-                            <div class="cell cell-exp1 cell-company">
-                                <p> Argeo Consultores Geotécnicos S.A.S</p>
-                            </div>
-                            <div class="cell cell-exp1 cell-function">
-                                <p> <span> Función principal:</span><br> Ingeniero a cargo de la elaboración de estudios
-                                    geotécnicos.</p>
-                            </div>
-                            <div class="cell cell-exp1 cell-description desc-1">
-                                <h4>PYTHON</h4>
-                                <p>Análisis geotécnicos </p>
-                            </div>
-                            <div class="cell cell-exp1 cell-description desc-2">
-                                <h4>VBA</h4>
-                                <p>Dibujo CAD automatizado</p>
-                            </div>
-
-                            <img class="cell cell-exp1 cell-img1" src="recurses/img/experiences/img-exp-1-1.png" alt="">
-                            <img class="cell cell-exp1 cell-img2" src="recurses/img/experiences/img-exp-1-2.png" alt="">
-                            <img class="cell cell-exp1 cell-img3" src="recurses/img/experiences/img-exp-1-3.png" alt="">
-                            <img class="cell cell-exp1 cell-img4" src="recurses/img/experiences/img-exp-1-4.png" alt="">
-                            <img class="cell cell-exp1 cell-img5" src="recurses/img/experiences/img-exp-1-5.png" alt="">
-                            <img class="cell cell-exp1 cell-img6" src="recurses/img/experiences/img-exp-1-6.png" alt="">
-                            <img class="cell cell-exp1 cell-img7" src="recurses/img/experiences/img-exp-1-7.png" alt="">
-
                         </div>
-                    </div>
-                    <div class="experience-slide" id="experience2">
-                        <div class="grid-container">
-                            <div class="cell cell-exp2 cell-date">
-                                <p><span> Jun</span>17 <br> <span>Sep</span>19</p>
-                            </div>
-                            <div class="cell cell-exp2 cell-position">
-                                <p> Ingeniero de diseño geotécnico</p>
-                            </div>
-                            <div class="cell cell-exp2 cell-company">
-                                <p> Diseños Geotécnicos S.A.S</p>
-                            </div>
-                            <div class="cell cell-exp2 cell-function">
-                                <p> <span> Función principal:</span><br> Ingeniero a cargo de la elaboración de estudios
-                                    geotécnicos.</p>
-                            </div>
-                            <div class="cell cell-exp2 cell-description desc-1">
-                                <h4>ARDUINO</h4>
-                                <p>Prototipos para instrumentación </p>
-                            </div>
-                            <div class="cell cell-exp2 cell-description desc-2">
-                                <h4>VBA</h4>
-                                <p>Dibujo CAD automatizado</p>
-                            </div>
+                        <div class="experience-slide" id="experience2">
+                            <div class="grid-container">
+                                <div class="cell cell-exp2 cell-date">
+                                    <p><span> Jun</span>17 <br> <span>Sep</span>19</p>
+                                </div>
+                                <div class="cell cell-exp2 cell-position">
+                                    <p> Ingeniero de diseño geotécnico</p>
+                                </div>
+                                <div class="cell cell-exp2 cell-company">
+                                    <p> Diseños Geotécnicos S.A.S</p>
+                                </div>
+                                <div class="cell cell-exp2 cell-function">
+                                    <p> <span> Función principal:</span><br> Ingeniero a cargo de la elaboración de
+                                        estudios
+                                        geotécnicos.</p>
+                                </div>
+                                <div class="cell cell-exp2 cell-description desc-1">
+                                    <h4>ARDUINO</h4>
+                                    <p>Prototipos para instrumentación </p>
+                                </div>
+                                <div class="cell cell-exp2 cell-description desc-2">
+                                    <h4>VBA</h4>
+                                    <p>Dibujo CAD automatizado</p>
+                                </div>
 
-                            <img class="cell cell-exp2 cell-img1" src="recurses/img/experiences/img-exp-2-1.png" alt="">
-                            <img class="cell cell-exp2 cell-img2" src="recurses/img/experiences/img-exp-2-2.png" alt="">
-                            <img class="cell cell-exp2 cell-img3" src="recurses/img/experiences/img-exp-2-3.png" alt="">
-                            <img class="cell cell-exp2 cell-img4" src="recurses/img/experiences/img-exp-2-4.png" alt="">
-                            <img class="cell cell-exp2 cell-img5" src="recurses/img/experiences/img-exp-2-5.png" alt="">
-                            <img class="cell cell-exp2 cell-img6" src="recurses/img/experiences/img-exp-2-6.png" alt="">
-                            <img class="cell cell-exp2 cell-img7" src="recurses/img/experiences/img-exp-2-7.png" alt="">
-                            <img class="cell cell-exp2 cell-img8" src="recurses/img/experiences/img-exp-2-8.png" alt="">
+                                <img class="cell cell-exp2 cell-img1" src="recurses/img/experiences/img-exp-2-1.png"
+                                    alt="">
+                                <img class="cell cell-exp2 cell-img2" src="recurses/img/experiences/img-exp-2-2.png"
+                                    alt="">
+                                <img class="cell cell-exp2 cell-img3" src="recurses/img/experiences/img-exp-2-3.png"
+                                    alt="">
+                                <img class="cell cell-exp2 cell-img4" src="recurses/img/experiences/img-exp-2-4.png"
+                                    alt="">
+                                <img class="cell cell-exp2 cell-img5" src="recurses/img/experiences/img-exp-2-5.png"
+                                    alt="">
+                                <img class="cell cell-exp2 cell-img6" src="recurses/img/experiences/img-exp-2-6.png"
+                                    alt="">
+                                <img class="cell cell-exp2 cell-img7" src="recurses/img/experiences/img-exp-2-7.png"
+                                    alt="">
+                                <img class="cell cell-exp2 cell-img8" src="recurses/img/experiences/img-exp-2-8.png"
+                                    alt="">
 
+                            </div>
                         </div>
-                    </div>
-                    <div class="experience-slide" id="experience3">
-                        <div class="grid-container">
-                            <div class="cell cell-exp3 cell-date">
-                                <p><span> Sep</span>13 <br> <span>Jun</span>17</p>
-                            </div>
-                            <div class="cell cell-exp3 cell-position">
-                                <p>Auxiliar de ingeniería</p>
-                            </div>
-                            <div class="cell cell-exp3 cell-company">
-                                <p>Diseños Geotécnicos S.A.S</p>
-                            </div>
-                            <div class="cell cell-exp3 cell-function">
-                                <p> <span> Función principal:</span><br>Programar y procesar información de exploración
-                                    de campo, digitación de
-                                    planos e informes.</p>
-                            </div>
-                            <div class="cell cell-exp3 cell-description desc-1">
-                                <h4>JAVA</h4>
-                                <p>Gestión de datos </p>
-                            </div>
-                            <div class="cell cell-exp3 cell-description desc-2">
-                                <h4>VBA</h4>
-                                <p>Dibujo CAD automatizado</p>
-                            </div>
+                        <div class="experience-slide" id="experience3">
+                            <div class="grid-container">
+                                <div class="cell cell-exp3 cell-date">
+                                    <p><span> Sep</span>13 <br> <span>Jun</span>17</p>
+                                </div>
+                                <div class="cell cell-exp3 cell-position">
+                                    <p>Auxiliar de ingeniería</p>
+                                </div>
+                                <div class="cell cell-exp3 cell-company">
+                                    <p>Diseños Geotécnicos S.A.S</p>
+                                </div>
+                                <div class="cell cell-exp3 cell-function">
+                                    <p> <span> Función principal:</span><br>Programar y procesar información de
+                                        exploración
+                                        de campo, digitación de
+                                        planos e informes.</p>
+                                </div>
+                                <div class="cell cell-exp3 cell-description desc-1">
+                                    <h4>JAVA</h4>
+                                    <p>Gestión de datos </p>
+                                </div>
+                                <div class="cell cell-exp3 cell-description desc-2">
+                                    <h4>VBA</h4>
+                                    <p>Dibujo CAD automatizado</p>
+                                </div>
 
-                            <img class="cell cell-exp3 cell-img1" src="recurses/img/experiences/img-exp-3-1.png" alt="">
-                            <img class="cell cell-exp3 cell-img2" src="recurses/img/experiences/img-exp-3-2.png" alt="">
-                            <img class="cell cell-exp3 cell-img3" src="recurses/img/experiences/img-exp-3-3.png" alt="">
-                            <img class="cell cell-exp3 cell-img4" src="recurses/img/experiences/img-exp-3-4.png" alt="">
-                            <img class="cell cell-exp3 cell-img5" src="recurses/img/experiences/img-exp-3-5.png" alt="">
-                            <img class="cell cell-exp3 cell-img6" src="recurses/img/experiences/img-exp-3-6.png" alt="">
+                                <img class="cell cell-exp3 cell-img1" src="recurses/img/experiences/img-exp-3-1.png"
+                                    alt="">
+                                <img class="cell cell-exp3 cell-img2" src="recurses/img/experiences/img-exp-3-2.png"
+                                    alt="">
+                                <img class="cell cell-exp3 cell-img3" src="recurses/img/experiences/img-exp-3-3.png"
+                                    alt="">
+                                <img class="cell cell-exp3 cell-img4" src="recurses/img/experiences/img-exp-3-4.png"
+                                    alt="">
+                                <img class="cell cell-exp3 cell-img5" src="recurses/img/experiences/img-exp-3-5.png"
+                                    alt="">
+                                <img class="cell cell-exp3 cell-img6" src="recurses/img/experiences/img-exp-3-6.png"
+                                    alt="">
 
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-
-
 
         </section>
 
@@ -624,8 +643,7 @@
                             escuchar lo que piensas. ¡Gracias de antemano por tu valioso aporte!
                         </p>
                         <div class="feedback">
-                            <textarea name="comentarios" rows="10" cols="40"
-                                placeholder="Escribe tu comentario aquí"
+                            <textarea name="comentarios" rows="10" cols="40" placeholder="Escribe tu comentario aquí"
                                 id="input-area"></textarea>
                         </div>
 
@@ -659,7 +677,7 @@
 
         </section>
 
-        <div class="container-transition"></div>
+
         <!--  
             
             EJEMPLO OK de animacion
@@ -668,7 +686,6 @@
             https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_motion_path
         
         -->
-
 
 
         <div class="container-transition"></div>

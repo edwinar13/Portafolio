@@ -1,3 +1,5 @@
+
+/*
 // Obtener todas las imágenes en la galería
 const galleryImages = document.querySelectorAll('.gallery-image');
 var bandera = true
@@ -27,4 +29,4 @@ function disableVerticalScroll() {
 // Desbloquear el scroll vertical
 function enableVerticalScroll() {
   document.body.style.overflowY = 'auto';
-}
+}*/

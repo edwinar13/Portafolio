@@ -12,10 +12,11 @@
 }
 
 @media (max-width: 550px) {
-
+  
   #about {
     margin-left: 5%;
     margin-right: 5%;
+    padding-top: 0px;
   }
 }
 
@@ -33,7 +34,6 @@
   transition: width 0.5s ease;
   max-width: 1300px;
   margin: auto;
-  margin-bottom: 100px;
 }
 
 .about-container-next {
