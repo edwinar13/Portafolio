@@ -1,8 +1,5 @@
-
-
-
-var indexPrev = 2
-var indexNext = 0
+var indexPrev = 2;
+var indexNext = 0;
 let listCharacters = [$(".char-1"), $(".char-2"), $(".char-3")];
 var characterPrev = null;
 var characterNext = null;
@@ -42,7 +39,6 @@ const images = document.querySelectorAll('.container-cv-img img');
 downloadCv.addEventListener('mouseover', () => {
     images.forEach((img, index) => {
         img.classList.add(`transformed${index + 1}`);
-        console.log(`transformed${index + 1}`)
     });
 });
 
@@ -55,7 +51,6 @@ downloadCv.addEventListener('mouseout', () => {
 imagesCv.addEventListener('mouseover', () => {
     images.forEach((img, index) => {
         img.classList.add(`transformed${index + 1}`);
-        console.log(`transformed${index + 1}`)
     });
 });
 

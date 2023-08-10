@@ -2,6 +2,7 @@
 let menuContainer = document.getElementById("header")
 let sectionHome = document.getElementById("home")
 let sectionAbout= document.getElementById("about")
+let menuDownloadCV= document.getElementById("menu-download-cv")
 
 
 
@@ -14,8 +15,13 @@ window.addEventListener('scroll', function () {
   if (value >= 0.95) {
     value = 0.7;
     menuContainer.style.background = "linear-gradient(to right, rgb(215, 150, 18, 0.95), rgb(189, 8, 79, 0.95))"
+    menuDownloadCV.style.display = 'block';
+    
+    
   } else {
     menuContainer.style.background = "linear-gradient(to right, rgb(215, 150, 18," + value + "), rgb(189, 8, 79," + value + "))"
+    menuDownloadCV.style.display = 'none';
+  
   }
   menuContainer.style.boxShadow = "0px 0px 20px 2px rgb(56, 4, 87, " + value + ")"
 

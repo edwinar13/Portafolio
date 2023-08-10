@@ -11,15 +11,29 @@
   padding-top: 100px;
 }
 
+@media (max-width: 550px) {
+
+  #about {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
 .about-container {
 
   width: 100%;
   border-radius: 5px;
-  margin-bottom: 100px;
+  /*
   background-color: #ffffff;
   background: radial-gradient(circle, rgb(14, 40, 53) 0%, rgba(14, 40, 53, 1) 38%, rgba(0, 0, 0, 1) 100%);
+  */
+  background-color: rgb(44, 56, 56, 1);
+  
   box-shadow: 5px 5px 20px 1px rgb(119, 119, 119, 0.5);
   transition: width 0.5s ease;
+  max-width: 1300px;
+  margin: auto;
+  margin-bottom: 100px;
 }
 
 .about-container-next {
@@ -112,7 +126,6 @@
 
 .lower-section {
   padding: 15px;
-  font-family: 'Josefin Sans', sans-serif;
 }
 
 .favorite-technology {
@@ -666,7 +679,6 @@ flex-grow: 1;
   text-align: center;
   margin: 0px;
   padding-top: 10px;
-  font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
   font-size: 17px;
 }
@@ -679,7 +691,6 @@ flex-grow: 1;
 
 .description-skill {
   margin: 10px;
-  font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
   font-size: 19px;
   text-align: center;
@@ -715,6 +726,7 @@ flex-grow: 1;
   border-color:  rgb(193, 255, 234);
   background-color:  rgba(193, 255, 234, 0.15);
   text-align: center;
+  user-select: none;
 }
 
 
@@ -764,9 +776,8 @@ flex-grow: 1;
 
 .card-skill p {
   margin: 10px;
-  font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /*

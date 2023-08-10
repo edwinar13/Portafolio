@@ -1,0 +1,383 @@
+/*====================================================*/
+/*===========           Seccion          =============*/
+/*====================================================*/
+
+#feedback {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 100px;
+}
+
+/*====================================================*/
+/*===========           Titulo          =============*/
+/*====================================================*/
+
+.feedback-container {
+  /*
+  background: rgb(27, 56, 70);
+  background: radial-gradient(circle, rgba(27, 56, 70, 1) 0%, rgba(27, 56, 70, 1) 38%, rgba(0, 0, 0, 1) 100%);
+  */
+  background-color: rgb(44, 56, 56);
+  margin: auto;
+  max-width: 1300px;
+  border-radius: 3px;
+}
+
+/*
+
+.feedback-container .title-section {
+  text-align: center;
+  margin: 0px;
+  font-size: 30px;
+  color: rgb(201, 151, 216);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+*/
+/*====================================================*/
+/*===========           data          =============*/
+/*====================================================*/
+
+
+
+.data-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+.container-feedback {
+  width: 50%;
+  flex: 1;
+
+}
+
+.container-feedback p {
+  color: #ccc;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 20PX;
+}
+
+.container-feedback p span {
+  font-style: italic;
+  color: #f0ceb3;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.feedback {
+  overflow: hidden;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  max-height: 1000px;
+  /* Ajusta este valor según sea necesario */
+  transition: max-height 1.0s ease;
+}
+
+.container-feedback textarea {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  background: #f0ceb3;
+  color: #000000;
+  border-radius: 5PX;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  resize: vertical;
+  border: none;
+  transition: width 1.0s ease, opacity 1.9s ease;
+}
+
+.container-feedback textarea:focus {
+  outline: none;
+}
+
+/*====================================================*/
+/*===========            btn             =============*/
+/*====================================================*/
+.container-inputs {
+  display: flex;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  transition:  opacity  1.0s ease;
+}
+
+.container-inputs.hidden {
+  opacity: 0;
+  height: 0;
+  padding: 0;
+}
+
+.container-inputs input {
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  background: #f0ceb3;
+  height: 40px;
+  width: 200px;
+  font-size: 20px;
+  border: none;
+  border-right: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  padding: 0px 10px;
+  transition: width 1.5s ease;
+ 
+}
+
+.container-inputs input:focus {
+  outline: none;
+}
+
+.button-bg {
+  background-color: #007bff;
+  border-radius: 0 8px 8px 0;
+  /*
+  clip-path: polygon(0% 0%, 90% 0%, 100% 10%, 100% 50%, 100% 90%, 90% 100%, 0% 100%);
+  transition: all 1.5s ease;
+  */
+  display: flex;
+  height: 40px;
+}
+
+.button-bg div {
+  clip-path: polygon(100% 45%, 0% 0%, 0% 40%, 90% 50%, 0% 60%, 0% 100%, 100% 55%);
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  background-color: rgb(224, 224, 224);
+}
+
+
+
+.container-inputs button {
+  font-size: 20px;
+  background-color: #007bff00;
+  border: none;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+
+#feedback-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.feedback-card {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #cca0102d;
+  box-shadow: 2px 2px 4px rgba(138, 138, 138, 0.76);
+  color: white;
+}
+
+.feedback-card-description {
+  padding: 10px;
+  margin: 30px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(138, 138, 138, 0.76);
+  background-color: #e4e4e4;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+/*
+.button-bg:hover {
+  clip-path: polygon(0% 45%, 100% 0%, 100% 40%, 10% 50%, 100% 60%, 100% 100%, 0% 55%);
+  color: #000000;
+  
+}
+*/
+
+
+
+
+
+/*
+
+
+
+.button-flying {
+  width: 30px;
+  height: 30px;
+  transform-origin: center;
+  animation: flying 4s linear;
+}
+
+.button-flying {
+  width: 100px;
+  height: 100px;
+  clip-path: polygon(0% 0%, 71.64% 0%, 82.12% 3.74%, 94.45% 19.48%, 99.74% 46.05%, 94.38% 72.57%, 84.46% 93.68%, 75.75% 100%, 0% 100%);
+
+  background-color: aliceblue;
+  transition: all 1.5s ease;
+
+}
+
+.button-flying:hover .svg-ok {
+  width: 100px;
+  height: 100px;
+  background-color: aliceblue;
+  clip-path: polygon(100% 100%, 51% 0%, 49% 0%, 0% 100%, 40% 90%, 50% 10%, 60% 90%);
+}
+
+@keyframes flying {
+  0% {
+    transform: translate(0, 0) rotate(0);
+  }
+
+  100% {
+    transform: translate(200px, -200px) rotate(360deg);
+  }
+}
+
+*/
+
+
+
+
+
+.efecto-ok {
+  /*
+  background-color: #007bff;
+  background: radial-gradient(circle, rgba(27, 56, 70, 1) 0%, rgba(27, 56, 70, 1) 38%, rgba(0, 0, 0, 1) 100%);
+  */
+
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg {
+  height: 100px;
+  background-color: aliceblue;
+  transition: all 1.5s ease;
+  margin: 5px;
+
+}
+
+.svg-e {
+  clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 100% 0%, 100% 10%, 80% 25%, 100% 40%, 100% 50%, 100% 50%, 100% 60%, 80% 75%, 100% 90%);
+  scroll-behavior: smooth;
+  width: 80px;
+
+}
+
+.svg-j {
+  clip-path: polygon(100% 100%, 00% 100%, 0% 50%, 10% 50%, 10% 0%, 60% 00%, 100% 0);
+  width: 90px;
+}
+
+.svg-a {
+  clip-path: polygon(100% 100%, 90% 0%, 10% 0%, 0% 100%, 40% 100%, 50% 90%, 60% 100%);
+  width: 100px;
+
+}
+
+.efecto-ok:hover .svg-e {
+  clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 100% 0%, 90% 30%, 20% 25%, 20% 40%, 35% 40%, 30% 60%, 20% 60%, 20% 75%, 90% 70%);
+}
+
+.efecto-ok:hover .svg-j {
+  clip-path: polygon(100% 100%, 10% 100%, 0% 70%, 40% 80%, 80% 80%, 60% 10%, 100% 0);
+}
+
+.efecto-ok:hover .svg-a {
+  clip-path: polygon(100% 100%, 60% 0%, 40% 0%, 0% 100%, 40% 90%, 50% 50%, 60% 90%);
+}
+
+
+.feedback-transition {
+  height: 50px;
+}
+
+
+
+
+
+@media (max-width: 500px) {
+
+
+
+  #feedback {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .container-feedback p {
+    text-align: center;
+  }
+
+
+
+  .data-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .container-cv {
+    width: 100%;
+  }
+
+  .container-feedback {
+    width: 100%;
+  }
+
+  .svg-e {
+    clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 100% 0%, 90% 30%, 20% 25%, 20% 40%, 35% 40%, 30% 60%, 20% 60%, 20% 75%, 90% 70%);
+  }
+
+  .svg-j {
+    clip-path: polygon(100% 100%, 10% 100%, 0% 70%, 40% 80%, 80% 80%, 60% 10%, 100% 0);
+  }
+
+  .svg-a {
+    clip-path: polygon(100% 100%, 60% 0%, 40% 0%, 0% 100%, 40% 90%, 50% 50%, 60% 90%);
+  }
+}
+
+
+
+.container-send {
+  display: flex;
+  /*
+  align-items: center;
+  max-width: 200px;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 5px;
+*/
+}
+
+.container-send input {
+  height: 40px;
+  padding: 0;
+  margin: 0;
+}
