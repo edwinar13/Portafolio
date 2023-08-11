@@ -62,10 +62,6 @@ const overlay = document.getElementById('overlay');
 
 
 
-
-
-
-
 menuButton.addEventListener('click', () => {
   overlay.style.display = 'flex';
 });

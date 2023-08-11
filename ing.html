@@ -16,7 +16,7 @@
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
 
-        <link rel="stylesheet" href="css/styles_ing_header.css">
+    <link rel="stylesheet" href="css/styles_ing_header.css">
     <link rel="stylesheet" href="css/styles_ing_home.css">
     <link rel="stylesheet" href="css/styles_ing_footer.css">
 
@@ -30,14 +30,14 @@
 <body>
 
     <!-- Contenido del encabezado -->
-    
+
     <header id="header">
         <div class="header-container">
 
             <div class="logo">
                 <h1 class="edwin-name" onclick="window.location.href='index.html';"><span>Edwin</span> j Arevalo</h1>
             </div>
-            <div class="icon-menu">
+            <div class="icon-menu" id="menu-button">
                 <div class="header-nav" onclick="viewMenu()">
                     <div class="color-yes"></div>
                     <div class="color-no"></div>
@@ -46,12 +46,27 @@
                     <div class="color-yes"></div>
                 </div>
             </div>
+            <!--
+                
+                            <div class="overlay" id="overlay">
+                                <div class="menu-card">
+                                    <ul>
+                                        <li class="close-button"><a href="#home">Inicio</a></li>
+                                        <li class="close-button"><a href="#about">Acerca de mi</a></li>
+                                        <li class="close-button"><a href="#projects">Proyectos</a></li>
+                                        <li class="close-button"><a href="#work-experience">Experiencia</a></li>
+                                        <li class="close-button"><a href="#feedback">Feedback</a></li>
+                                        <li class="close-button"><a href="#home">Descargar CV</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        -->
             <nav class="nav-menu">
                 <ul>
-                    <li><a  href="#home">Inicio</a></li>
-                    <li class="strikethrough"><a  href="#about">Acerca de mi</a></li>
-                    <li class="strikethrough"><a  href="#projects">Proyectos</a></li>
-                    <li class="strikethrough"><a  href="#skills ">Habilidades</a></li>
+                    <li><a href="#home">Inicio</a></li>
+                    <li class="strikethrough"><a href="#about">Acerca de mi</a></li>
+                    <li class="strikethrough"><a href="#projects">Proyectos</a></li>
+                    <li class="strikethrough"><a href="#skills ">Habilidades</a></li>
                 </ul>
             </nav>
 
@@ -90,7 +105,7 @@
                         <!-- para los iconos https://fontawesome.com/v4/icons/ -->
                         <a href="https://www.linkedin.com/in/edwin-j-arevalo/" target="_blank">
                             <i class="fab fa-linkedin"></i>
-                          </a>
+                        </a>
 
 
                         <a href="https://api.whatsapp.com/send?phone=573118994279&amp;text=Hola%20Edwin, "
@@ -107,7 +122,7 @@
                         <a href="tel:+573118994279" target="_blank">
                             <i class="fa fa-phone-square" aria-hidden="true"></i>
                         </a>
-                   
+
                     </div>
                 </div>
             </div>
@@ -119,8 +134,7 @@
     </div>
     <!-- Scripts JS -->
 
-    <script src="js/script_dev.js"></script>
-    <script src="js/script_dev_footer.js"></script>
+
 
 </body>
 

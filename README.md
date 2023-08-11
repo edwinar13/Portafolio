@@ -2,25 +2,35 @@
 Portafolio de Ediwn Arevalo, tanto de ingeniero Civil con desarrollador de software 
 
 
+---
+title: Portafolio
+description: Portafolio de Ediwn Arevalo, tanto de ingeniero Civil con desarrollador de software 
+tags:
+  - HTML
+  - CSS
+  - JS  
+---
 
-IDEAS TEMPORALES
+# Python Flask Example
 
+Esto es una pagina [web](https://edwinar13.github.io/Portafolio/index.html) de mi portafolio.
 
- La animación css de las pantallas de teléfono en pila, para descargar o ver el hv de ingeniero
+[![PORTAFOLIO](https://railway.app/button.svg)](https://railway.app/new/template/zUcpux)
 
+## ✨ Perfiles Profesionales
 
-Primera sección inicio: podría ser muy simple el logo en la parte superior izquierda el menú en la derecha, de fondo transparente, el fondo de la sección en degradado, con un texto grande bien denso saludando "¡Hola!", luego otro menos denso que diga "Soy Edwin j Arevalo", y luego un mensaje en texto normal "algo relacionado a ingeniería ingeniería no importa la carrera sigue siendo ingenioso o algo así", sería bueno incluir una animación pero que sea muy sutil suave, puede ser que la palabra Arévalo esté como animada como escribiéndose
+- Desarrollador de software
+- Ingeniero Civil/Geotecnista
 
-Cambio de sección : para diferenciar las dos acciones colocar como un estilo de olas, con diferentes tonalidades y profundidades y transparencias, también se podría colocar una animación como que esas olas se muevan, espero que estén en función del scroll si el cambio está en la mitad de la página que sea más rápido y si están en los costados que sea más lento
+## 💁‍♀️ Cómo navegar
 
-Segunda sección acerca de mi: con fondo blanco o gris muy claro degradado, tonos muy suaves. Que lleve la descripción del mi perfil profesional, mi foto, mis tegnologias favoritas y por qué lo són , si algo colocar gustos o hobbies.
-Cambio de sección: si animación en la interseccion por qué el fondo es el mismo en las dos secciones, sin embargo que los objetos de la siguiente sección se animen apareciendo de dientes lados
-Tercera Sección Proyectos:
-
-
-
-
-
+- En la pagina de inicio encontrará dos opciones para dos portafolios, una de Ing. y otro de Dev.
+- El perfil Ing esta todavía en construcción
+- El perfil Dev tiene la información relacionada a:
+- - mi perfil profesional como programador 
+- - mis proyectos mas relevantes
+- - los aportes como programador en mis experiencia laborales 
+- - zona para feedback
 
 
 

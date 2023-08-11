@@ -10,7 +10,7 @@
   align-items: center;
   background: rgba(3, 3, 3, 0.2) fixed no-repeat 50% 50%;
   background-size: cover;
-  background-image: url(/recurses/img/en_construcion.png);
+  background-image: url(../recurses/img/en_construcion.png);
 
   height: 100vh;
 }
