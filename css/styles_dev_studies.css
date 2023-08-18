@@ -1,0 +1,279 @@
+/*====================================================*/
+/*===========           Seccion          =============*/
+/*====================================================*/
+
+#studies {
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+/*====================================================*/
+/*===========           Titulo          =============*/
+/*====================================================*/
+
+.studies-container {  
+  /*
+  background-color: blue;
+  */
+  padding: 0;
+}
+
+
+
+.notebook{
+  width: 100% ;
+  /*
+  background-color: #672295;
+  */
+  position: relative;
+}
+
+
+
+
+.page-inf{
+  filter: drop-shadow(0px 0px 4px #000000);
+  fill:#848484;
+  margin: 3px;
+}
+
+
+
+
+.page-sup{
+  fill:#e9e9e9;
+  fill-opacity:1;
+  stroke:#ababab;
+  stroke-width:0.05;
+  transition: all 1s ease;
+}
+
+.page-sup:hover{
+  fill: #b9b9b9d3; 
+  filter: drop-shadow(0px 0px 1px #cfcfcf);
+  width: 0;
+}
+#page-right-3:hover{
+  /*
+  transform: translate(-100%, 00px);
+  transform: rotateY(90deg);
+  */
+  
+  transform: perspective(500px) rotateY(90deg);
+  /*
+  d: "m 1.7504481,236.57671 c 15.9741439,-0.0215 33.2331319,-1.49839 47.8650389,4e-4 l 1.96e-4,68.05343 c -12.812625,2.64259 -31.646898,0.22135 -47.8652349,-3e-5 z"
+  */
+}
+#page-left-3:hover{  
+  transform: perspective(-0px) rotateY(-180deg);
+  
+}
+
+
+.notebook-data {
+  /*
+  position: absolute;
+  */
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    background-image: url(../recurses/svg/Notebook/notebook_6.svg);
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+
+.pages{
+  margin: 30px;
+}
+
+.page-left,
+.page-right {
+    width: 50%; 
+    height: 100%; 
+    background-color: rgba(255, 255, 255, 0.5); 
+    display: flex;
+    align-items: center;
+   
+}
+
+
+
+
+
+/*
+.page-left{
+  background-color: greenyellow;
+}
+
+.page-right{
+  background-color: gray;  
+  clip-path: path('m 97.531035,236.57671 c -15.974144,-0.0215 -33.233132,-1.49839 -47.865039,4e-4 l -1.96e-4,68.05343 c 12.812625,2.64259 31.646898,0.22136 47.865235,-3e-5 z');
+}
+
+.notebook:hover .page-right{
+  clip-path: path('M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 150 200 z');
+}
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-studies{
+  margin-top: 30px;
+  display: flex;
+  gap: 50px;
+  
+}
+
+
+
+@media (max-width: 800px) {
+  
+.container-studies{
+  flex-wrap: wrap;
+  flex-direction: column;
+  
+}
+
+
+}
+
+.cont-left{
+  flex: 1;
+  display: flex;
+  gap: 3px;
+  
+}
+.cont-left img{
+  width: 100%;
+  height: 100%;  
+  object-fit: cover;
+  filter: blur(0px);
+}
+.img-training{
+  border-radius: 5px;
+  overflow: hidden;
+  opacity: 0.2;
+  width: 20%;
+  transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out, border-radius 0.5s ease;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.596);
+}
+.img-show{
+  border-radius: 10px;
+  opacity: 1.0;
+  width: 100%;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.9);
+  scale: 1.1;
+  z-index: 1;
+}
+
+
+.cont-right{
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+}
+
+.card-training{
+  border-radius: 5px;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.596);
+}
+
+
+.title-training{
+  display: flex;
+  justify-content: center; 
+  background-color: #4a5252;  
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+}
+
+.title-training h2{
+  margin: auto;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: start;
+  color: antiquewhite;
+}
+
+.description-training{
+  margin: 0px;
+  padding: 0px;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid #4a5252;
+  transition:  all 1.5s ease ;
+  max-height: 0px;
+  overflow: hidden;
+}
+.description-show{
+  max-height: 500px;
+  padding: 5px;
+
+}
+
+.description-training h3{
+  margin: 10px 0 5px ;
+  color: #d35f5f;
+  font-weight: 300;
+}
+.description-training h4{
+  margin: 5px;
+  color: antiquewhite;
+  font-weight: 300;
+}
+.description-training p{
+  color: antiquewhite;
+  font-weight: 200;
+}
+
+.btn-training{
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  margin: 5px;
+  background-color: antiquewhite;
+  
+  clip-path: polygon(20% 45%, 45% 45%, 45% 20%, 55% 20%, 55% 45%, 80% 45%, 80% 55%, 55% 55%, 55% 80%, 45% 80%, 45% 55%, 20% 55%);
+  transition: all 3s ease;
+  cursor: pointer;
+}
+.btn-training:hover{
+  background-color: rgb(228, 148, 45);
+}
+
+.btn-training-select{
+  clip-path: polygon(35% 35%,       35% 35%, 35% 35%, 65% 35%, 65% 35%,       65% 35%, 65% 65%,       65% 65%, 65% 65%, 35% 65%, 35% 65%,              35% 65%);
+  background-color: #d17639;
+}
+
+
+

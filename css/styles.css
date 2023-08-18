@@ -1,18 +1,26 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+
 body {
-    font-family: 'Ubuntu', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+
+
+
 #section-profiles {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100vh;  
     width: 100vw;
     background-image: url("../recurses/img/profiles/bg.jpg");
     background-size: cover;
+    z-index: 20;
 }
 
 .profiles {
@@ -38,22 +46,62 @@ body {
 
 
 .edwin-name {
-    font-size: 46px;
+    font-size: 60px;
     font-weight: bold;
-    margin: 0px;
+    margin: 30px 10px 10px;
     color: antiquewhite;
     text-align: center;
+    text-shadow: 2px 2px 0px #848484d9,4px 4px 1px #626262e7, 6px 6px 2px #000000d9
 }
+
+
+
 
 .edwin-text {
     font-size: 25px;
     font-weight: 300;
-    margin: 20px;
+    margin: 0 20px 20px 20px;
     color: antiquewhite;
     text-align: center;
 }
 
+.edwin-icon {
+    margin: 0 20px 20px 20px;
+    display: flex;
+    gap: 30px;
+}
+.edwin-text a {
+text-decoration: none;
+}
 
+.icon {
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icon .path-color-dev{
+    transition: fill 0.3s ease-in-out;
+    fill: #639687c0; /* Cambiar el color al hacer hover */
+}
+
+.icon .path-color-ing{
+    transition: fill 0.3s ease-in-out;
+    fill: #639687c0; /* Cambiar el color al hacer hover */
+}
+.icon:hover .path-color-ing{
+    fill: #a5acb9; /* Cambiar el color al hacer hover */
+}
+
+.icon:hover .path-color-dev{
+    fill: #a5acb9; /* Cambiar el color al hacer hover */
+}
+
+.icon:hover {
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.2)
+}
 
 
 /*::::::::::::::::::::   profession   ::::::::::::::::::::::::::::*/
@@ -82,11 +130,11 @@ body {
 }
 
 .edwin-ing {
-    color: rgb(170, 201, 166);
+    color: #639687c0;
 }
 
 .edwin-dev {
-    color: rgb(165, 133, 165);
+    color: #a1c7bbc0;
 }
 
 /*-------------------------------------------------------*/
@@ -115,25 +163,42 @@ body {
     cursor: pointer;
     overflow: hidden;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2)
-        /*
-    display: flex;
-    justify-content: space-between;
-    height: calc(100vh);
-    width: 50%;
-    cursor: pointer;
-    position: relative;
-    */
+
 }
 
+.image-container a {
+  text-decoration: none;
+}
 .image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: height 1s ease;
 }
+
+
+.image-container p{
+    text-align: center;
+    font-size: 20px;
+    height: 20px;
+    padding: 10px;
+    margin: 0;
+    background-color: #639687c0;
+    color: antiquewhite;
+}
+
+
+
+
 
 .image-container:hover {
     width: 100%;
 }
+.image-container:hover img{
+    height: calc(100% - 50px);
+}
+
+
 
 .image-container-dev {
     width: 30%;
@@ -172,15 +237,7 @@ body {
     }
 
     .infomation-container {
-        /*
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        flex: 1;
-        background-color: aquamarine;
-        */
-        max-width: 200px;
+        max-width: 250px;
     }
 
     .edwin-name {
@@ -208,10 +265,28 @@ body {
 
 
 
+@media (max-height: 500px) {
+    .image-container img {
+        width: 100%;
+        object-fit: cover;        
+        object-position: center 20%
+    }
+    .image-container p {
+        font-size: 15px;
+        margin: 4px 0 0;
+    }
+
+    
+
+}
+
+
+
 @media (max-width: 500px) {
 
     #section-profiles {
-        height: 100vh;  
+        min-height: 100vh;  
+        height: auto;
         width: 100%;   
     }    
 
@@ -234,43 +309,29 @@ body {
     }
     
 
-
-
-    .image-container-dev {  
-        background-color: aquamarine;
-        
-    }    
-    .image-container-ing {        
-        background-color: blueviolet;
-    }
-    
     .image-container{
+        /*
         flex: 1;
+        */
         width: 100%;
+        height: 250px;
         display: flex;
         flex-direction: column;
-        background-color: rgba(255, 255, 255, 0.349);
-    }
 
+    }
 
 
     .image-container img {
         width: 100%;
-        height: 210px;
+        height: 200px;
         object-fit: cover;        
-        object-position: center 25%
+        object-position: center 20%
     }
-
+    
     .image-container p {
-        margin: 20px 10px 5px 10px;
-        width: 100%;
-        height: 20px;
-        text-align: center;
-        color: antiquewhite;
-        
+        font-size: 15px;
+        margin: 4px 0 0;
     }
-
-
 
 
 

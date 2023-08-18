@@ -1,41 +1,17 @@
 /**************************************************************************************/
-/***********<!--Fondo home / about / projects / experience-->**************************/
+/************************<!-- Contenido del Home -->*********************************/
 /**************************************************************************************/
 
-
-
-
-.bg-container {
-  background-image: linear-gradient(315deg,
-      hsl(240deg 100% 20%) 0%,
-      hsl(289deg 100% 21%) 3%,
-      hsl(315deg 100% 27%) 8%,
-      hsl(329deg 100% 36%) 17%,
-      hsl(337deg 100% 43%) 34%,
-      hsl(357deg 91% 59%) 64%,
-      hsl(17deg 100% 59%) 85%,
-      hsl(34deg 100% 53%) 94%,
-      hsl(45deg 100% 50%) 98%,
-      hsl(55deg 100% 50%) 100%);
-}
-
-
-
-
-
-
-
-
-/**************************************************************************************/
-/************************<!-- Contenido del home -->*********************************/
-/**************************************************************************************/
 
 
 #home {
   padding-top: 70px;
   margin-left: 10%;
   margin-right: 10%;
+  /*
   height: calc(100vh - 70px);
+  */
+  min-height: calc(100vh - 70px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,108 +19,91 @@
 
 
 .home-container {
-  /*
-  margin: auto;
-  position: relative;
-    */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
   width: 100%;
   max-width: 1300px;
 }
 
-/*====================================================*/
-/*===========           TEXTOS           =============*/
-/*====================================================*/
+
 
 .container-left {
   flex-basis: 50%;
-
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 
+.container-right {
+}
+
+.container-data {
+}
+
 .title {
-  font-size: 60px;
+  font-size: 50px;
+  font-weight: 400;
   margin: 0;
   padding-top: 5%;
-  font-family: 'Ubuntu', sans-serif;
+  color: #3817178f;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+
 }
 
 .subtitle {
   margin: 0;
   margin-top: 2%;
-  font-size: 35px;
-  font-family: 'Ubuntu', sans-serif;
+  font-size: 100px;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+  color: #2c3838;
+  white-space: nowrap;
+}
+
+.subtitle img {
+  height: 30px;
 }
 
 .char {
-  color: rgb(4, 46, 53);
+  color: #2c3838;
   transition: color 1.5s ease;
   opacity: 0.8;
 }
 
-.music {
-  color: rgb(231, 208, 166);
-}
-
-
 .show {
-  color: rgb(59, 201, 194);
+  color: #7c4846b7;
   opacity: 1;
-}
-
-
-
-.text-ini {
-  margin: 0;
-  margin-top: 2%;
-  font-size: 25px;
-  color: rgb(0, 0, 0);
-  font-weight: 300;
-  font-family: 'Ubuntu', sans-serif;
-
-}
-
-.text-ini img {
-  height: 15px;
 }
 
 .text {
   margin: auto;
-  margin-top: 5%;
-  margin-bottom: 60px;
-  font-size: 25px;
-  color: rgb(219, 224, 226);
-  font-weight: 300;
-
-
-}
-
-.text span {
-  color: rgb(183, 138, 199);
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: rgb(255, 227, 227);
+  font-weight: 400;
 }
 
 
-
-
-
-
-
-
-/* Media query para el diseño responsivo */
-@media (max-width: 820px) {
+@media (max-width: 1000px) {
   .container-left {
-    flex-basis: 100%;
+    margin-bottom: 60px;
   }
 }
 
-@media (max-width: 550px) {
 
-  #home {
-    margin-left: 5%;
-    margin-right: 5%;
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+  .container-left {
+    flex-basis: 100%;
+    margin-left: 0px;
   }
 
   .title {
@@ -152,28 +111,44 @@
   }
 
   .subtitle {
-    font-size: 25px;
-  }
-
-  .text-ini {
-    font-size: 18px;
-
+    font-size: 80px;
   }
 
   .text {
-    font-size: 18px;
-    margin-bottom: 100px;
+    font-size: 25px;
   }
 
 
 
 }
 
+@media (max-width: 500px) {
+
+  #home {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+  .title {
+    font-size: 8vw;
+  }
+
+  .subtitle {
+    font-size: 16vw;
+  }
+
+  .text {
+    font-size: 6vw;
+  }
 
 
 
 
+  /*
+  text-align: center;
+  */
 
+}
 
 
 
@@ -191,9 +166,6 @@
   flex-basis: 300px;
 }
 
-
-
-
 .container-cv {
 
   flex: 1;
@@ -203,7 +175,6 @@
   min-width: 300px;
 
 }
-
 
 .container-cv-img {
   position: relative;
@@ -215,8 +186,6 @@
   border-radius: 10px;
 }
 
-
-
 .container-cv-img img {
   border-radius: 10px;
   position: absolute;
@@ -224,43 +193,35 @@
   transition: 0.5s;
 }
 
-
-
-
-
 .container-cv-img:hover {
   cursor: pointer;
 }
 
-
 .container-cv-img:hover+.download-cv {
-  background-color: rgb(193, 255, 234);
-  border-color: rgb(193, 255, 234);
-  color: black;
+  background-image: linear-gradient(111deg, rgba(222, 7, 82, 0.8) 0%, rgba(113, 0, 105, 0.8) 100%);
+
+  color: antiquewhite;
   cursor: pointer;
 }
 
-
-
 .download-cv {
-  border: 2px solid gray;
+  background-color: #2c3838;
+
   max-width: 200px;
   margin: 20px auto;
   text-align: center;
   color: #ccc;
   font-size: 25px;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
 }
 
 .download-cv:hover {
-  background-color: rgb(193, 255, 234);
-  border-color: rgb(193, 255, 234);
-  color: black;
+  background-image: linear-gradient(111deg, rgba(222, 7, 82, 0.8) 0%, rgba(113, 0, 105, 0.8) 100%);
+
+  color: antiquewhite;
   cursor: pointer;
 }
-
-
 
 
 .original4 {
@@ -284,8 +245,6 @@
 }
 
 
-
-
 .transformed4 {
   transform: translate(60px, -60px);
   opacity: 1;
@@ -307,44 +266,50 @@
 }
 
 
-
-
-
-
-
-
-
-
 @media (max-width: 550px) {
 
-  .container-cv-img {
 
-    width: 120px;
-    height: 185px;
-    background: rgb(0, 0, 0, 0.1);
-    transform: rotate(-30deg) skew(20deg);
+  .container-cv {
+    min-width: auto;
+    font-size: 7vw;
   }
 
+  
+  .container-cv-img {
+
+    transform: rotate(-0deg) skew(0deg);
+  }
+
+  .original4 {
+    transform: translate(0px, -20px);
+  }
+
+  .original3 {
+    transform: translate(0px, -15px);
+  }
+
+  .original2 {
+    transform: translate(0px, -10px);
+  }
+
+  .original1 {
+    transform: translate(0px, -5px);
+  }
+
+
   .transformed4 {
-    transform: translate(60px, -60px);
-    opacity: 1;
+    transform: translate(10px, 0px);
   }
 
   .transformed3 {
-    transform: translate(45px, -45px);
-    opacity: 0.8;
+    transform: translate(3px, 2px);
   }
 
   .transformed2 {
-    transform: translate(30px, -30px);
-    opacity: 0.6;
+    transform: translate(-3px, 0px);
   }
 
   .transformed1 {
-    transform: translate(15px, -15px);
+    transform: translate(-10px, 0px);
   }
-
-
-
-
 }

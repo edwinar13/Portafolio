@@ -2,25 +2,24 @@
 <html lang="es">
 
 <head>
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SX773ZB4JP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SX773ZB4JP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-SX773ZB4JP');
-</script>
+        gtag('config', 'G-SX773ZB4JP');
+    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edwinj dev</title>
+    <link rel="icon" type="image/png" href="recurses/svg/logo_icon_1.png">
     <!-- Enlaces a las hojas de estilo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
@@ -29,12 +28,12 @@
     <link rel="stylesheet" href="css/styles_dev_about.css">
     <link rel="stylesheet" href="css/styles_dev_projects.css">
     <link rel="stylesheet" href="css/styles_dev_experience.css">
+    <link rel="stylesheet" href="css/styles_dev_studies.css">
     <link rel="stylesheet" href="css/styles_dev_feedback.css">
     <link rel="stylesheet" href="css/styles_dev_footer.css">
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-
-
 
 
     <!-- Agrega la fuente de los iconos de Font Awesome en el head del HTML -->
@@ -48,713 +47,1075 @@
     <!-- Contenido del encabezado -->
     <header id="header">
         <div class="header-container">
+            <div class="header-data">
+                <a href="index.html">
 
+                    <div class="logo">
+                        <div class="efect-logo">
+                            <div class="l-svg-e l-svg"> </div>
+                            <div class="l-svg-j l-svg"> </div>
+                            <div class="l-svg-a l-svg"> </div>
+                        </div>
 
-            <div class="logo">
-                <img class="edwin-logo" src="recurses/svg/logo.svg" onclick="window.location.href='index.html';" alt="">
-            </div>
-            <div class="icon-menu" id="menu-button">
-                <div class="header-nav">
-                    <div class="color-yes"></div>
-                    <div class="color-no"></div>
-                    <div class="color-yes"></div>
-                    <div class="color-no"></div>
-                    <div class="color-yes"></div>
+                    </div>
+                </a>
+                <div class="space"></div>
+                <div class="icon-menu" id="menu-button">
+                    <div class="header-nav">
+                        <div class="color-yes"></div>
+                        <div class="color-no"></div>
+                        <div class="color-yes"></div>
+                        <div class="color-no"></div>
+                        <div class="color-yes"></div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="overlay" id="overlay">
-                <div class="menu-card">
+                <div class="overlay" id="overlay">
+                    <div class="menu-card">
+                        <ul>
+                            <li class="close-button"><a href="#home">Inicio</a></li>
+                            <li class="close-button"><a href="#about">Acerca de mi</a></li>
+                            <li class="close-button"><a href="#projects">Proyectos</a></li>
+                            <li class="close-button"><a href="#work-experience">Experiencia</a></li>
+                            <li class="close-button"><a href="#feedback">Feedback</a></li>
+                            <li class="close-button"><a href="#home">Descargar CV</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <nav class="nav-menu">
                     <ul>
-                        <li class="close-button"><a href="#home">Inicio</a></li>
-                        <li class="close-button"><a href="#about">Acerca de mi</a></li>
-                        <li class="close-button"><a href="#projects">Proyectos</a></li>
-                        <li class="close-button"><a href="#work-experience">Experiencia</a></li>
-                        <li class="close-button"><a href="#feedback">Feedback</a></li>
-                        <li class="close-button"><a href="#home">Descargar CV</a></li>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#about">Acerca de mi</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#work-experience">Experiencia </a></li>
+                        <li><a href="#feedback">Feedback </a></li>
+                        <li class="cv" id="menu-download-cv"><a href="#home">Descargar CV</a></li>
                     </ul>
-                </div>
+                </nav>
+
             </div>
 
-
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#about">Acerca de mi</a></li>
-                    <li><a href="#projects">Proyectos</a></li>
-                    <li><a href="#work-experience">Experiencia </a></li>
-                    <li><a href="#feedback">Feedback </a></li>
-                    <li class="cv" id="menu-download-cv"><a href="#home">Descargar CV</a></li>
-                </ul>
-            </nav>
 
         </div>
     </header>
 
     <div class="bg-container">
-
-        <!-- Contenido de la sección Home -->
         <section id="home">
-
             <div class="home-container">
+
+
                 <div class="container-left">
-
-
-                    <h1 class="title">!Hola¡ </h1>
-                    <h3 class="subtitle">
-                        <span class="music">♪</span>
-                        Soy<span class="char char-1"> E</span>dwin<span class="char char-2">J</span>ohany<span
-                            class="char char-3">A</span>revalo<span class="music">♪</span>
-                    </h3>
-                    <p class="text-ini">
-                        &#160 &#160 Colombiano
-
-                        <span>
+                    <div class="container-data">
+                        <h1 class="title">!Hola¡ </h1>
+                        <h3 class="subtitle">
+                            Soy<span class="char char-1"> E</span>dwin<span class="char char-3"></h3>
+                        <h3 class="subtitle">A</span>revalo
                             <img crossorigin="anonymous" src="recurses/img/flag-colombia.png" alt="🇨🇴"
                                 draggable="false" tabindex="-1">
-                        </span>
-
-
-                    </p>
-                    <p class="text">
-                        Desarrollador con experiencia en diseño web, móvil, aplicaciones de escritorio y
-                        automatización.
-
-                    </p>
-
+                        </h3>
+                        <p class="text">
+                            Desarrollador Fullstack Junior
+                        </p>
+                    </div>
                 </div>
 
+
                 <div class="container-right">
-
                     <div class="container-cv">
-
                         <div class="container-cv-img">
                             <img src="recurses/img/cv_inf.png" class="original1">
                             <img src="recurses/img/cv_inf.png" class="original2">
                             <img src="recurses/img/cv_inf.png" class="original3">
-                            <img src="recurses/img/cv.png" class="original4">
+                            <img src="recurses/img/cv.jpg" class="original4">
                         </div>
-                        <div id="download-cv" class="download-cv">Descagar CV</div>
+                        <div id="download-cv" class="download-cv">Descargar CV</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="bg-card-container">
+            <section id="about">
+
+                <div id="about-container" class="about-container">
+                    <div>
+
+                        <h2 class="title-section ts-white">Acerca DE mi</h2>
+
+
+                        <div class="about-container-grid">
+                            <div class="card">
+                                <div class="upper-section">
+
+                                    <div class="profile-pic-container">
+                                        <img src="recurses/img/imagen_desarrollador_software_reducido.jpg"
+                                            alt="Foto de perfil">
+                                    </div>
+
+
+                                </div>
+                                <div class="lower-section">
+                                    <h2>Conocimientos en en diseño web, móvil, aplicaciones de escritorio y
+                                        automatización.</h2>
+
+                                    <div class="social-icons">
+                                        <div class="container-iconos">
+
+                                            <a href="https://www.linkedin.com/in/edwin-j-arevalo" target="_blank">
+                                                <img src="recurses/img/iconos/linkedin.png" class="contacto">
+                                            </a>
+                                            <a href="https://github.com/edwinar13" target="_blank">
+                                                <img src="recurses/img/iconos/github.png" alt="" class="contacto">
+                                            </a>
+                                            <a href="mailto:edwinarevalo88@gmail.com" target="_blank">
+                                                <img src="recurses/img/iconos/gmail.png" alt="" class="contacto">
+
+                                            </a>
+                                            <a href="https://api.whatsapp.com/send?phone=573118994279&amp;text=Hola%20Edwin, "
+                                                target="_blank">
+                                                <img src="recurses/img/iconos/whatsapp.png" alt="" class="contacto">
+                                            </a>
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                    <h3>Tecnologías Favoritas</h3>
+                                    <ul class="favorite-technology">
+                                        <li><i class="fa fa-tag" aria-hidden="true"></i>Python</li>
+                                        <li><i class="fa fa-tag" aria-hidden="true"></i>Firebase</li>
+                                        <li><i class="fa fa-tag" aria-hidden="true"></i>CSS</li>
+                                    </ul>
+                                    <h3>Hobbies</h3>
+                                    <ul class="Hobbies">
+                                        <li><i class="fa fa-tag" aria-hidden="true"></i>Electronica</li>
+                                        <li><i class="fa fa-tag" aria-hidden="true"></i>Carpintería</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="card-2">
+
+                                <div class="side back">
+
+                                    <p class="description-skill">Experiencia personal en soluciones de software para
+                                        optimización de procesos en ingeniería civil, así como en desarrollo de
+                                        prototipos
+                                        de hardware para instrumentación geotécnica. Las principales habilidades en
+                                        programación incluyen:</p>
+
+                                    <div class="bottons-selected">
+                                        <div id="btn-1" class=" btn-skill "> Escritorio </div>
+                                        <div id="btn-2" class=" btn-skill"> Web </div>
+                                        <div id="btn-3" class=" btn-skill"> Móvil </div>
+                                        <div id="btn-4" class=" btn-skill"> Hardware </div>
+                                        <div id="btn-5" class=" btn-skill"> DB </div>
+                                        <div id="btn-6" class=" btn-skill "> Herramientas </div>
+                                        <div id="btn-7" class=" btn-skill "> Todos </div>
+
+                                    </div>
+
+
+
+                                    <div class="container-skill">
+                                        <div class="card-skill destock web hardware">
+                                            <img src="recurses/img/skills/python.png" alt="">
+                                            <p> Python</p>
+                                        </div>
+                                        <div class="card-skill destock mobile ">
+                                            <img src="recurses/img/skills/java.png" alt="">
+                                            <p> Java</p>
+                                        </div>
+                                        <div class="card-skill destock">
+                                            <img src="recurses/img/skills/vba.png" alt="">
+                                            <p> VisualBasic</p>
+                                        </div>
+
+                                        <div class="card-skill web">
+                                            <img src="recurses/img/skills/html-5.png" alt="">
+                                            <p> HTML</p>
+                                        </div>
+                                        <div class="card-skill web">
+                                            <img src="recurses/img/skills/css-3.png" alt="">
+                                            <p> CSS</p>
+                                        </div>
+                                        <div class="card-skill web">
+                                            <img src="recurses/img/skills/js.png" alt="">
+                                            <p> JavaScript</p>
+                                        </div>
+                                        <div class="card-skill web">
+                                            <img src="recurses/img/skills/flask.png" alt="">
+                                            <p> Flask</p>
+                                        </div>
+
+                                        <div class="card-skill mobile hardware">
+                                            <img src="recurses/img/skills/android_.png" alt="">
+                                            <p> Android</p>
+                                        </div>
+                                        <div class="card-skill mobile hardware">
+                                            <img src="recurses/img/skills/firebase.png" alt="">
+                                            <p> Firebase</p>
+                                        </div>
+
+
+                                        <div class="card-skill hardware">
+                                            <img src="recurses/img/skills/esp32.jpg" alt="">
+                                            <p> Esp32</p>
+                                        </div>
+                                        <div class="card-skill hardware">
+                                            <img src="recurses/img/skills/Arduino.png" alt="">
+                                            <p> Arduino</p>
+                                        </div>
+
+                                        <div class="card-skill destock db">
+                                            <img src="recurses/img/skills/MySQL.png" alt="">
+                                            <p> MySQL</p>
+                                        </div>
+                                        <div class="card-skill web db">
+                                            <img src="recurses/img/skills/mongodb.png" alt="">
+                                            <p> MongoDB</p>
+                                        </div>
+
+
+                                        <div class="card-skill tool">
+                                            <img src="recurses/img/skills/github.png" alt="">
+                                            <p> Github</p>
+                                        </div>
+                                        <div class="card-skill tool">
+                                            <img src="recurses/img/skills/Git.png" alt="">
+                                            <p> git</p>
+                                        </div>
+
+                                        <div class="card-skill tool">
+                                            <img src="recurses/img/skills/Visual_Studio_Code.png" alt="">
+                                            <p> VS Code</p>
+                                        </div>
+
+                                        <div class="card-skill tool">
+                                            <img src="recurses/img/skills/Figma.png" alt="">
+                                            <p> Figma</p>
+                                        </div>
+
+                                        <div class="card-skill tool">
+                                            <img src="recurses/img/skills/scrum.png" alt="">
+                                            <p> Scrum</p>
+                                        </div>
+
+                                    </div>
+
+                                    <h2 class="bg-temp">
+                                        Skill
+                                    </h2>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
                 </div>
 
-            </div>
 
+            </section>
 
-        </section>
+            <div class="container-transition"></div>
 
-        <!-- Contenido de la sección About Me -->
-        <section id="about">
+            <section id="projects">
+                <div class="projects-section">
+                    <h2 class="title-section"> Proyectos</h2>
+                    <p class="description-section">
+                        Te invito a descubrir una selección de mis proyectos más destacados. Cada uno de ellos
+                        representa un
+                        desafío creativo y técnico que me ha permitido desarrollar mis habilidades.
 
-            <div id="about-container" class="about-container">
-                <div>
+                    </p>
 
-                    <h2 class="title-section ts-white">Acerca de mi</h2>
+                    <div class="gallery-projects">
 
+                        <div class="sets-projects">
 
-                    <div class="about-container-grid">
-                        <div class="card">
-                            <div class="upper-section">
+                            <div class="details">
+                                <h2>MPM-UN</h2>
+                                <p>Software de escritorio con una GUI moderna, para ejecutar análisis numéricos del
+                                    Método del Punto Material (MPM), posee un sistema de dibujo CAD y generación de
+                                    mallas. </p>
+                                <a href="https://github.com/edwinar13/MPM-UN/tree/alpha" target="_blank">
+                                    → GitHub
+                                </a>
+                                <a href="https://youtu.be/Qk8DzIMOPb0" target="_blank">
+                                    → YouTube
+                                </a>
+                                <ul class="skill-project">
+                                    <li class="tag">
+                                        <svg viewBox="0 0 10 10">
+                                            <g transform="translate(-61.299943,-197.97064)">
+                                                <path
+                                                    d="m 66.215214,197.97064 -4.915271,5.01673 5.051763,4.98327 h 4.948237 v -9.93408 z m 0.584987,4.01957 c 0.550621,3e-5 0.9969,0.44654 0.996652,0.99716 -3.3e-5,0.55043 -0.446231,0.99663 -0.996652,0.99666 -0.550624,2.5e-4 -0.997135,-0.44603 -0.997168,-0.99666 -2.48e-4,-0.55082 0.446345,-0.99741 0.997168,-0.99716 z" />
+                                            </g>
+                                        </svg>
+                                        <p>Python</p>
+                                    </li>
+                                    <li class="tag">
+                                        <svg viewBox="0 0 10 10">
+                                            <g transform="translate(-61.299943,-197.97064)">
+                                                <path
+                                                    d="m 66.215214,197.97064 -4.915271,5.01673 5.051763,4.98327 h 4.948237 v -9.93408 z m 0.584987,4.01957 c 0.550621,3e-5 0.9969,0.44654 0.996652,0.99716 -3.3e-5,0.55043 -0.446231,0.99663 -0.996652,0.99666 -0.550624,2.5e-4 -0.997135,-0.44603 -0.997168,-0.99666 -2.48e-4,-0.55082 0.446345,-0.99741 0.997168,-0.99716 z" />
+                                            </g>
+                                        </svg>
+                                        <p>PySide6/Qt</p>
+                                    </li>
+                                    <li class="tag">
+                                        <svg viewBox="0 0 10 10">
+                                            <g transform="translate(-61.299943,-197.97064)">
+                                                <path
+                                                    d="m 66.215214,197.97064 -4.915271,5.01673 5.051763,4.98327 h 4.948237 v -9.93408 z m 0.584987,4.01957 c 0.550621,3e-5 0.9969,0.44654 0.996652,0.99716 -3.3e-5,0.55043 -0.446231,0.99663 -0.996652,0.99666 -0.550624,2.5e-4 -0.997135,-0.44603 -0.997168,-0.99666 -2.48e-4,-0.55082 0.446345,-0.99741 0.997168,-0.99716 z" />
+                                            </g>
+                                        </svg>
+                                        <p>JSON</p>
+                                    </li>
 
-                                <div class="profile-pic-container">
-                                    <img src="recurses/img/imagen_desarrollador_software_reducido.jpeg"
-                                        alt="Foto de perfil">
-                                </div>
-
-
-                            </div>
-                            <div class="lower-section">
-                                <h2>Desarrollador Fullstack Junior autodidacta</h2>
-
-                                <div class="social-icons">
-                                    <div class="container-iconos">
-
-                                        <a href="https://www.linkedin.com/in/edwin-j-arevalo" target="_blank">
-                                            <img src="recurses/img/iconos/linkedin.png" class="contacto">
-                                        </a>
-                                        <a href="https://github.com/edwinar13" target="_blank">
-                                            <img src="recurses/img/iconos/github.png" alt="" class="contacto">
-                                        </a>
-                                        <a href="mailto:edwinarevalo88@gmail.com" target="_blank">
-                                            <img src="recurses/img/iconos/gmail.png" alt="" class="contacto">
-
-                                        </a>
-                                        <a href="https://api.whatsapp.com/send?phone=573118994279&amp;text=Hola%20Edwin, "
-                                            target="_blank">
-                                            <img src="recurses/img/iconos/whatsapp.png" alt="" class="contacto">
-                                        </a>
-
-
-
-
-
-                                    </div>
-                                </div>
-                                <h3>Tecnologías Favoritas</h3>
-                                <ul class="favorite-technology">
-                                    <li><i class="fa fa-tag" aria-hidden="true"></i>Python</li>
-                                    <li><i class="fa fa-tag" aria-hidden="true"></i>Firebase</li>
-                                    <li><i class="fa fa-tag" aria-hidden="true"></i>CSS</li>
                                 </ul>
-                                <h3>Hobbies</h3>
-                                <ul class="Hobbies">
-                                    <li><i class="fa fa-tag" aria-hidden="true"></i>Electronica</li>
-                                    <li><i class="fa fa-tag" aria-hidden="true"></i>Carpintería</li>
+                            </div>
+                            <a href="https://youtu.be/Qk8DzIMOPb0" target="_blank">
+                                <img src="recurses/img/projects/0-mpm-un-mac-2.jpg" alt="Imagen 1" class="image" />
+                            </a>
+
+
+
+
+
+                            <div class="details align-r">
+                                <h2>InsituGeo</h2>
+                                <p>Programa desarrollado con macros de Excel, para almacenamiento y gestión de
+                                    información, con la cual se realiza la automatización de dibujos CAD.</p>
+
+                                <a href="https://youtu.be/y4I4BqKjJHw" target="_blank">
+                                    → YouTube
+                                </a>
+
+
+
+                                <ul class="skill-project">
+                                    <li class="tag">
+                                        <svg viewBox="0 0 10 10">
+                                            <g transform="translate(-61.299943,-197.97064)">
+                                                <path
+                                                    d="m 66.215214,197.97064 -4.915271,5.01673 5.051763,4.98327 h 4.948237 v -9.93408 z m 0.584987,4.01957 c 0.550621,3e-5 0.9969,0.44654 0.996652,0.99716 -3.3e-5,0.55043 -0.446231,0.99663 -0.996652,0.99666 -0.550624,2.5e-4 -0.997135,-0.44603 -0.997168,-0.99666 -2.48e-4,-0.55082 0.446345,-0.99741 0.997168,-0.99716 z" />
+                                            </g>
+                                        </svg>
+                                        <p>VisualBasic</p>
+                                    </li>
+
                                 </ul>
                             </div>
 
+                            <a href="https://youtu.be/y4I4BqKjJHw" target="_blank">
+                                <img src="recurses/img/projects/0-insitugeo-2.jpg" alt="Imagen 1" class="image" />
+                            </a>
+
                         </div>
 
-                        <div class="card-2">
+                        <div class="sets-projects">
 
-                            <div class="side back">
+                            <div class="details">
+                                <h2>Inggeodev</h2>
+                                <p>Aplicación web que presta servicios de desarrollo de software para ingeniería civil,
+                                    relacionado a la gestión de información de exploraciones geotecnias. </p>
+                                <a href="https://github.com/edwinar13/inggeodev" target="_blank">
+                                    → GitHub
+                                </a>
 
-                                <p class="description-skill">Experiencia personal en soluciones de software para
-                                    optimización de procesos en ingeniería civil, así como en desarrollo de prototipos
-                                    de hardware para instrumentación geotécnica. Las principales habilidades en
-                                    programación incluyen:</p>
+                                <ul class="skill-project">
 
-                                <div class="bottons-selected">
-                                    <div id="btn-1" class=" btn-skill "> Escritorio </div>
-                                    <div id="btn-2" class=" btn-skill"> Web </div>
-                                    <div id="btn-3" class=" btn-skill"> Móvil </div>
-                                    <div id="btn-5" class=" btn-skill"> Hardware </div>
-                                    <div id="btn-4" class=" btn-skill"> DB </div>
-                                    <div id="btn-6" class=" btn-skill "> Herramientas </div>
-                                    <div id="btn-7" class=" btn-skill "> Todos </div>
-                                </div>
-
-
-
-                                <div class="container-skill">
-                                    <div class="card-skill destock web hardware">
-                                        <img src="recurses/img/skills/python.png" alt="">
-                                        <p> Python</p>
-                                    </div>
-                                    <div class="card-skill destock mobile ">
-                                        <img src="recurses/img/skills/java.png" alt="">
-                                        <p> Java</p>
-                                    </div>
-                                    <div class="card-skill destock">
-                                        <img src="recurses/img/skills/vba.png" alt="">
-                                        <p> VisualBasic</p>
-                                    </div>
-
-                                    <div class="card-skill web">
-                                        <img src="recurses/img/skills/html-5.png" alt="">
-                                        <p> HTML</p>
-                                    </div>
-                                    <div class="card-skill web">
-                                        <img src="recurses/img/skills/css-3.png" alt="">
-                                        <p> CSS</p>
-                                    </div>
-                                    <div class="card-skill web">
-                                        <img src="recurses/img/skills/js.png" alt="">
-                                        <p> JavaScript</p>
-                                    </div>
-                                    <div class="card-skill web">
-                                        <img src="recurses/img/skills/flask.png" alt="">
-                                        <p> Flask</p>
-                                    </div>
-
-                                    <div class="card-skill mobile hardware">
-                                        <img src="recurses/img/skills/android_.png" alt="">
-                                        <p> Android</p>
-                                    </div>
-                                    <div class="card-skill mobile hardware">
-                                        <img src="recurses/img/skills/firebase.png" alt="">
-                                        <p> Firebase</p>
-                                    </div>
-
-
-                                    <div class="card-skill hardware">
-                                        <img src="recurses/img/skills/esp32.jpg" alt="">
-                                        <p> Esp32</p>
-                                    </div>
-                                    <div class="card-skill hardware">
-                                        <img src="recurses/img/skills/Arduino.png" alt="">
-                                        <p> Arduino</p>
-                                    </div>
-
-                                    <div class="card-skill destock db">
-                                        <img src="recurses/img/skills/MySQL.png" alt="">
-                                        <p> MySQL</p>
-                                    </div>
-                                    <div class="card-skill web db">
-                                        <img src="recurses/img/skills/mongodb.png" alt="">
-                                        <p> MongoDB</p>
-                                    </div>
-
-
-                                    <div class="card-skill tool">
-                                        <img src="recurses/img/skills/github.png" alt="">
-                                        <p> Github</p>
-                                    </div>
-                                    <div class="card-skill tool">
-                                        <img src="recurses/img/skills/Git.png" alt="">
-                                        <p> git</p>
-                                    </div>
-
-                                    <div class="card-skill tool">
-                                        <img src="recurses/img/skills/Visual_Studio_Code.png" alt="">
-                                        <p> VS Code</p>
-                                    </div>
-
-                                    <div class="card-skill tool">
-                                        <img src="recurses/img/skills/Figma.png" alt="">
-                                        <p> Figma</p>
-                                    </div>
-
-                                    <div class="card-skill tool">
-                                        <img src="recurses/img/skills/scrum.png" alt="">
-                                        <p> Scrum</p>
-                                    </div>
-
-                                </div>
+                                    <li class="tag">
+                                        <svg viewBox="0 0 10 10">
+                                            <g transform="translate(-61.299943,-197.97064)">
+                                                <path
+                                                    d="m 66.215214,197.97064 -4.915271,5.01673 5.051763,4.98327 h 4.948237 v -9.93408 z m 0.584987,4.01957 c 0.550621,3e-5 0.9969,0.44654 0.996652,0.99716 -3.3e-5,0.55043 -0.446231,0.99663 -0.996652,0.99666 -0.550624,2.5e-4 -0.997135,-0.44603 -0.997168,-0.99666 -2.48e-4,-0.55082 0.446345,-0.99741 0.997168,-0.99716 z" />
+                                            </g>
+                                        </svg>
+                                        <p>HTML</p>
+                                    </li>
+                                    <li class="tag">
+                                        <svg viewBox="0 0 10 10">
+                                            <g transform="translate(-61.299943,-197.97064)">
+                                                <path
+                                                    d="m 66.215214,197.97064 -4.915271,5.01673 5.051763,4.98327 h 4.948237 v -9.93408 z m 0.584987,4.01957 c 0.550621,3e-5 0.9969,0.44654 0.996652,0.99716 -3.3e-5,0.55043 -0.446231,0.99663 -0.996652,0.99666 -0.550624,2.5e-4 -0.997135,-0.44603 -0.997168,-0.99666 -2.48e-4,-0.55082 0.446345,-0.99741 0.997168,-0.99716 z" />
+                                            </g>
+                                        </svg>
+                                        <p>CSS</p>
+                                    </li>
+                                    <li class="tag">
+                                        <svg viewBox="0 0 10 10">
+                                            <g transform="translate(-61.299943,-197.97064)">
+                                                <path
+                                                    d="m 66.215214,197.97064 -4.915271,5.01673 5.051763,4.98327 h 4.948237 v -9.93408 z m 0.584987,4.01957 c 0.550621,3e-5 0.9969,0.44654 0.996652,0.99716 -3.3e-5,0.55043 -0.446231,0.99663 -0.996652,0.99666 -0.550624,2.5e-4 -0.997135,-0.44603 -0.997168,-0.99666 -2.48e-4,-0.55082 0.446345,-0.99741 0.997168,-0.99716 z" />
+                                            </g>
+                                        </svg>
+                                        <p>JS</p>
+                                    </li>
 
 
 
+                                    <li class="tag">
+                                        <svg viewBox="0 0 10 10">
+                                            <g transform="translate(-61.299943,-197.97064)">
+                                                <path
+                                                    d="m 66.215214,197.97064 -4.915271,5.01673 5.051763,4.98327 h 4.948237 v -9.93408 z m 0.584987,4.01957 c 0.550621,3e-5 0.9969,0.44654 0.996652,0.99716 -3.3e-5,0.55043 -0.446231,0.99663 -0.996652,0.99666 -0.550624,2.5e-4 -0.997135,-0.44603 -0.997168,-0.99666 -2.48e-4,-0.55082 0.446345,-0.99741 0.997168,-0.99716 z" />
+                                            </g>
+                                        </svg>
+                                        <p>Python</p>
+                                    </li>
+                                    <li class="tag">
+                                        <svg viewBox="0 0 10 10">
+                                            <g transform="translate(-61.299943,-197.97064)">
+                                                <path
+                                                    d="m 66.215214,197.97064 -4.915271,5.01673 5.051763,4.98327 h 4.948237 v -9.93408 z m 0.584987,4.01957 c 0.550621,3e-5 0.9969,0.44654 0.996652,0.99716 -3.3e-5,0.55043 -0.446231,0.99663 -0.996652,0.99666 -0.550624,2.5e-4 -0.997135,-0.44603 -0.997168,-0.99666 -2.48e-4,-0.55082 0.446345,-0.99741 0.997168,-0.99716 z" />
+                                            </g>
+                                        </svg>
+                                        <p>Flask</p>
+                                    </li>
+
+
+                                </ul>
                             </div>
 
+                            <a href="https://github.com/edwinar13/inggeodev" target="_blank">
+                                <img src="recurses/img/projects/0-inggeodev-web-2.jpg" alt="Imagen 1" class="image" />
+                            </a>
+
+
+
+
+
+                            <div class="details align-r">
+                                <h2>ClubPastelero</h2>
+                                <p>Aplicación web desarrollada en el curso Misión TIC 2022, cuyo objetivo es brindar
+                                    recetas y artículos de repostería, y una cocina interactiva que incluye aparatos con
+                                    IoT.
+                                    .</p>
+
+                                <a href="https://github.com/Programaciongrupo6/SitioWeb_ClubPasteleria_MINTIC"
+                                    target="_blank">
+                                    → GitHub
+                                </a>
+                                <a href="https://programaciongrupo6.github.io/SitioWeb_ClubPasteleria_MINTIC/"
+                                    target="_blank">
+                                    → Web
+                                </a>
+
+
+
+                                <ul class="skill-project">
+                                    <li class="tag">
+                                        <svg viewBox="0 0 10 10">
+                                            <g transform="translate(-61.299943,-197.97064)">
+                                                <path
+                                                    d="m 66.215214,197.97064 -4.915271,5.01673 5.051763,4.98327 h 4.948237 v -9.93408 z m 0.584987,4.01957 c 0.550621,3e-5 0.9969,0.44654 0.996652,0.99716 -3.3e-5,0.55043 -0.446231,0.99663 -0.996652,0.99666 -0.550624,2.5e-4 -0.997135,-0.44603 -0.997168,-0.99666 -2.48e-4,-0.55082 0.446345,-0.99741 0.997168,-0.99716 z" />
+                                            </g>
+                                        </svg>
+                                        <p>HTML</p>
+                                    </li>
+                                    <li class="tag">
+                                        <svg viewBox="0 0 10 10">
+                                            <g transform="translate(-61.299943,-197.97064)">
+                                                <path
+                                                    d="m 66.215214,197.97064 -4.915271,5.01673 5.051763,4.98327 h 4.948237 v -9.93408 z m 0.584987,4.01957 c 0.550621,3e-5 0.9969,0.44654 0.996652,0.99716 -3.3e-5,0.55043 -0.446231,0.99663 -0.996652,0.99666 -0.550624,2.5e-4 -0.997135,-0.44603 -0.997168,-0.99666 -2.48e-4,-0.55082 0.446345,-0.99741 0.997168,-0.99716 z" />
+                                            </g>
+                                        </svg>
+                                        <p>CSS</p>
+                                    </li>
+                                    <li class="tag">
+                                        <svg viewBox="0 0 10 10">
+                                            <g transform="translate(-61.299943,-197.97064)">
+                                                <path
+                                                    d="m 66.215214,197.97064 -4.915271,5.01673 5.051763,4.98327 h 4.948237 v -9.93408 z m 0.584987,4.01957 c 0.550621,3e-5 0.9969,0.44654 0.996652,0.99716 -3.3e-5,0.55043 -0.446231,0.99663 -0.996652,0.99666 -0.550624,2.5e-4 -0.997135,-0.44603 -0.997168,-0.99666 -2.48e-4,-0.55082 0.446345,-0.99741 0.997168,-0.99716 z" />
+                                            </g>
+                                        </svg>
+                                        <p>JS</p>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <a href="https://programaciongrupo6.github.io/SitioWeb_ClubPasteleria_MINTIC/"
+                                target="_blank">
+                                <img src="recurses/img/projects/0-club-pastelero-2.jpg" alt="Imagen 1" class="image" />
+                            </a>
+
                         </div>
 
+                        <div class="sets-projects">
+
+                            <div class="details">
+                                <h2>VolcanApp</h2>
+                                <p>Aplicación móvil desarrollada durante el Hackathon-Misión TIC 2022, esta app se
+                                    orienta a reducir los efectos naturales de las erupciones volcánicas. </p>
+                                <a href="https://github.com/Programaciongrupo6/VolcanApp_HackathonGrupo3"
+                                    target="_blank">
+                                    → GitHub
+                                </a>
+                                <a href="https://youtube.com/shorts/1FJXG6WmN9Q?feature=share" target="_blank">
+                                    → YouTube
+                                </a>
+
+                                <ul class="skill-project">
+
+                                    <li class="tag">
+                                        <svg viewBox="0 0 10 10">
+                                            <g transform="translate(-61.299943,-197.97064)">
+                                                <path
+                                                    d="m 66.215214,197.97064 -4.915271,5.01673 5.051763,4.98327 h 4.948237 v -9.93408 z m 0.584987,4.01957 c 0.550621,3e-5 0.9969,0.44654 0.996652,0.99716 -3.3e-5,0.55043 -0.446231,0.99663 -0.996652,0.99666 -0.550624,2.5e-4 -0.997135,-0.44603 -0.997168,-0.99666 -2.48e-4,-0.55082 0.446345,-0.99741 0.997168,-0.99716 z" />
+                                            </g>
+                                        </svg>
+                                        <p>Java</p>
+                                    </li>
+                                    <li class="tag">
+                                        <svg viewBox="0 0 10 10">
+                                            <g transform="translate(-61.299943,-197.97064)">
+                                                <path
+                                                    d="m 66.215214,197.97064 -4.915271,5.01673 5.051763,4.98327 h 4.948237 v -9.93408 z m 0.584987,4.01957 c 0.550621,3e-5 0.9969,0.44654 0.996652,0.99716 -3.3e-5,0.55043 -0.446231,0.99663 -0.996652,0.99666 -0.550624,2.5e-4 -0.997135,-0.44603 -0.997168,-0.99666 -2.48e-4,-0.55082 0.446345,-0.99741 0.997168,-0.99716 z" />
+                                            </g>
+                                        </svg>
+                                        <p>Firebase</p>
+                                    </li>
+                                    <li class="tag">
+                                        <svg viewBox="0 0 10 10">
+                                            <g transform="translate(-61.299943,-197.97064)">
+                                                <path
+                                                    d="m 66.215214,197.97064 -4.915271,5.01673 5.051763,4.98327 h 4.948237 v -9.93408 z m 0.584987,4.01957 c 0.550621,3e-5 0.9969,0.44654 0.996652,0.99716 -3.3e-5,0.55043 -0.446231,0.99663 -0.996652,0.99666 -0.550624,2.5e-4 -0.997135,-0.44603 -0.997168,-0.99666 -2.48e-4,-0.55082 0.446345,-0.99741 0.997168,-0.99716 z" />
+                                            </g>
+                                        </svg>
+                                        <p>ESP32</p>
+                                    </li>
+
+
+
+
+
+                                </ul>
+                            </div>
+
+                            <a href="https://youtube.com/shorts/1FJXG6WmN9Q?feature=share" target="_blank">
+
+                                <img src="recurses/img/projects/0-volcanapp-1.jpg" alt="Imagen 1" class="image" />
+                            </a>
+
+
+
+
+
+                            <div class="details align-r">
+                                <h2>TaxiMunicipal</h2>
+                                <p>Ampliación en desarrollo, para servicio de taxi; esta app esta enfocada a los
+                                    mercados locales (municipios) donde no se cuenta con este tipo de herramientas
+                                    digitales.</p>
+
+                                <a href="https://www.figma.com/proto/a0sIWSpQfVFGHVZ1s1JdQ6/Taxi-municipal?type=design&node-id=175-96&t=4H4qoS9hMNYQo3NZ-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=95%3A97"
+                                    target="_blank">
+                                    → Figma
+                                </a>
+
+
+
+
+                                <ul class="skill-project">
+                                    <li class="tag">
+                                        <svg viewBox="0 0 10 10">
+                                            <g transform="translate(-61.299943,-197.97064)">
+                                                <path
+                                                    d="m 66.215214,197.97064 -4.915271,5.01673 5.051763,4.98327 h 4.948237 v -9.93408 z m 0.584987,4.01957 c 0.550621,3e-5 0.9969,0.44654 0.996652,0.99716 -3.3e-5,0.55043 -0.446231,0.99663 -0.996652,0.99666 -0.550624,2.5e-4 -0.997135,-0.44603 -0.997168,-0.99666 -2.48e-4,-0.55082 0.446345,-0.99741 0.997168,-0.99716 z" />
+                                            </g>
+                                        </svg>
+                                        <p>Java</p>
+                                    </li>
+                                    <li class="tag">
+                                        <svg viewBox="0 0 10 10">
+                                            <g transform="translate(-61.299943,-197.97064)">
+                                                <path
+                                                    d="m 66.215214,197.97064 -4.915271,5.01673 5.051763,4.98327 h 4.948237 v -9.93408 z m 0.584987,4.01957 c 0.550621,3e-5 0.9969,0.44654 0.996652,0.99716 -3.3e-5,0.55043 -0.446231,0.99663 -0.996652,0.99666 -0.550624,2.5e-4 -0.997135,-0.44603 -0.997168,-0.99666 -2.48e-4,-0.55082 0.446345,-0.99741 0.997168,-0.99716 z" />
+                                            </g>
+                                        </svg>
+                                        <p>Firebase</p>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <a href="https://www.figma.com/proto/a0sIWSpQfVFGHVZ1s1JdQ6/Taxi-municipal?type=design&node-id=175-96&t=4H4qoS9hMNYQo3NZ-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=95%3A97"
+                                target="_blank">
+
+                                <img src="recurses/img/projects/0-taxi-municipal-1.jpg" alt="Imagen 1" class="image" />
+                            </a>
+
+                        </div>
+
+                        <div class="sets-projects">
+
+                            <div class="details">
+                                <h2>PIP</h2>
+                                <p>Equipo para ejecutar prueba integridad de pilotes (PIP), el cual permite leer tiempos
+                                    en los cuales viajan las ondas en pilotes en concreto. </p>
+                                <a href="https://disgeotec.com/" target="_blank">
+                                    → Mas información en disgeotec.com
+                                </a>
+
+                                <ul class="skill-project">
+
+                                    <li class="tag">
+                                        <svg viewBox="0 0 10 10">
+                                            <g transform="translate(-61.299943,-197.97064)">
+                                                <path
+                                                    d="m 66.215214,197.97064 -4.915271,5.01673 5.051763,4.98327 h 4.948237 v -9.93408 z m 0.584987,4.01957 c 0.550621,3e-5 0.9969,0.44654 0.996652,0.99716 -3.3e-5,0.55043 -0.446231,0.99663 -0.996652,0.99666 -0.550624,2.5e-4 -0.997135,-0.44603 -0.997168,-0.99666 -2.48e-4,-0.55082 0.446345,-0.99741 0.997168,-0.99716 z" />
+                                            </g>
+                                        </svg>
+                                        <p>ESP32</p>
+                                    </li>
+                                    <li class="tag">
+                                        <svg viewBox="0 0 10 10">
+                                            <g transform="translate(-61.299943,-197.97064)">
+                                                <path
+                                                    d="m 66.215214,197.97064 -4.915271,5.01673 5.051763,4.98327 h 4.948237 v -9.93408 z m 0.584987,4.01957 c 0.550621,3e-5 0.9969,0.44654 0.996652,0.99716 -3.3e-5,0.55043 -0.446231,0.99663 -0.996652,0.99666 -0.550624,2.5e-4 -0.997135,-0.44603 -0.997168,-0.99666 -2.48e-4,-0.55082 0.446345,-0.99741 0.997168,-0.99716 z" />
+                                            </g>
+                                        </svg>
+                                        <p>Python</p>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                            <a href="https://disgeotec.com/" target="_blank">
+                                <img src="recurses/img/projects/0-hardware-1.jpg" alt="Imagen 1"
+                                    class="image image-hardware" />
+                            </a>
+
+
+
+
+
+                            <div class="details align-r">
+                                <h2>Sistema de monitoreo</h2>
+                                <p>Se creo un prototipo que permite realizar el monitoreo en tiempo real de un
+                                    deslizamiento, con lectura de datos como deformación y esfuerzos.
+
+                                    .</p>
+
+                                <a href="https://disgeotec.com/" target="_blank">
+                                    → Mas información en disgeotec.com
+                                </a>
+
+
+                                <ul class="skill-project">
+                                    <li class="tag">
+                                        <svg viewBox="0 0 10 10">
+                                            <g transform="translate(-61.299943,-197.97064)">
+                                                <path
+                                                    d="m 66.215214,197.97064 -4.915271,5.01673 5.051763,4.98327 h 4.948237 v -9.93408 z m 0.584987,4.01957 c 0.550621,3e-5 0.9969,0.44654 0.996652,0.99716 -3.3e-5,0.55043 -0.446231,0.99663 -0.996652,0.99666 -0.550624,2.5e-4 -0.997135,-0.44603 -0.997168,-0.99666 -2.48e-4,-0.55082 0.446345,-0.99741 0.997168,-0.99716 z" />
+                                            </g>
+                                        </svg>
+                                        <p>Arduino</p>
+                                    </li>
+                                    <li class="tag">
+                                        <svg viewBox="0 0 10 10">
+                                            <g transform="translate(-61.299943,-197.97064)">
+                                                <path
+                                                    d="m 66.215214,197.97064 -4.915271,5.01673 5.051763,4.98327 h 4.948237 v -9.93408 z m 0.584987,4.01957 c 0.550621,3e-5 0.9969,0.44654 0.996652,0.99716 -3.3e-5,0.55043 -0.446231,0.99663 -0.996652,0.99666 -0.550624,2.5e-4 -0.997135,-0.44603 -0.997168,-0.99666 -2.48e-4,-0.55082 0.446345,-0.99741 0.997168,-0.99716 z" />
+                                            </g>
+                                        </svg>
+                                        <p>Android</p>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <a href="https://disgeotec.com/" target="_blank">
+                                <img src="recurses/img/projects/0-hardware-2.jpg" alt="Imagen 1"
+                                    class="image image-hardware" />
+                            </a>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </section>
+
+            <div class="container-transition"></div>
+
+            <section id="work-experience">
+                <div class="experience-container">
+
+                    <h2 class="title-section">Experiencia laboral</h2>
+
+                    <p class="description-section">
+                        Te invito a descubrir las empresas donde he aportado valor con mis habilidades de programación
+                    </p>
+                    <div class="circles">
+                        <div id="circle-1" class="circle"></div>
+                        <div id="circle-2" class="circle"></div>
+                        <div id="circle-3" class="circle"></div>
+                    </div>
+
+                    <div class="container-slider">
+                        <div class="area-slider">
+                            <div class="experience-slide" id="experience1">
+                                <div class="grid-container">
+                                    <div class="cell cell-exp1 cell-date">
+                                        <p><span> Oct</span>19</p>
+                                        <p><span>Abr</span>23</p>
+                                    </div>
+
+                                    <div class="cell cell-exp1 cell-position">
+                                        <p> Ingeniero de diseño geotécnico</p>
+                                    </div>
+                                    <div class="cell cell-exp1 cell-company">
+                                        <p> Argeo Consultores Geotécnicos S.A.S</p>
+                                    </div>
+                                    <div class="cell cell-exp1 cell-function">
+                                        <p> <span> Función principal:</span></p>
+                                        <p> Ingeniero a cargo de la elaboración de estudios geotécnicos.</p>
+                                    </div>
+                                    <div class="cell cell-exp1 cell-description desc-1">
+                                        <h4>PYTHON</h4>
+                                        <p>Análisis geotécnicos </p>
+                                    </div>
+                                    <div class="cell cell-exp1 cell-description desc-2">
+                                        <h4>VBA</h4>
+                                        <p>Dibujo CAD automatizado</p>
+                                    </div>
+
+                                    <img class="cell cell-exp1 cell-img1" src="recurses/img/experiences/img-exp-1-1.jpg"
+                                        alt="">
+                                    <img class="cell cell-exp1 cell-img2" src="recurses/img/experiences/img-exp-1-2.jpg"
+                                        alt="">
+                                    <img class="cell cell-exp1 cell-img3" src="recurses/img/experiences/img-exp-1-3.jpg"
+                                        alt="">
+                                    <img class="cell cell-exp1 cell-img4" src="recurses/img/experiences/img-exp-1-4.jpg"
+                                        alt="">
+                                    <img class="cell cell-exp1 cell-img5" src="recurses/img/experiences/img-exp-1-5.jpg"
+                                        alt="">
+                                    <img class="cell cell-exp1 cell-img6" src="recurses/img/experiences/img-exp-1-6.jpg"
+                                        alt="">
+                                    <img class="cell cell-exp1 cell-img7" src="recurses/img/experiences/img-exp-1-7.jpg"
+                                        alt="">
+
+                                </div>
+                            </div>
+                            <div class="experience-slide" id="experience2">
+                                <div class="grid-container">
+                                    <div class="cell cell-exp2 cell-date">
+                                        <p><span> Jun</span>17 </p>
+                                        <p> <span>Sep</span>19</p>
+                                    </div>
+                                    <div class="cell cell-exp2 cell-position">
+                                        <p> Ingeniero de diseño geotécnico</p>
+                                    </div>
+                                    <div class="cell cell-exp2 cell-company">
+                                        <p> Diseños Geotécnicos S.A.S</p>
+                                    </div>
+                                    <div class="cell cell-exp2 cell-function">
+                                        <p> <span> Función principal:</span></p>
+                                        <p> Ingeniero a cargo de la elaboración de estudios geotécnicos.</p>
+                                    </div>
+                                    <div class="cell cell-exp2 cell-description desc-1">
+                                        <h4>ARDUINO</h4>
+                                        <p>Prototipos para instrumentación </p>
+                                    </div>
+                                    <div class="cell cell-exp2 cell-description desc-2">
+                                        <h4>VBA</h4>
+                                        <p>Dibujo CAD automatizado</p>
+                                    </div>
+
+                                    <img class="cell cell-exp2 cell-img1" src="recurses/img/experiences/img-exp-2-1.jpg"
+                                        alt="">
+                                    <img class="cell cell-exp2 cell-img2" src="recurses/img/experiences/img-exp-2-2.jpg"
+                                        alt="">
+                                    <img class="cell cell-exp2 cell-img3" src="recurses/img/experiences/img-exp-2-3.jpg"
+                                        alt="">
+                                    <img class="cell cell-exp2 cell-img4" src="recurses/img/experiences/img-exp-2-4.jpg"
+                                        alt="">
+                                    <img class="cell cell-exp2 cell-img5" src="recurses/img/experiences/img-exp-2-5.jpg"
+                                        alt="">
+                                    <img class="cell cell-exp2 cell-img6" src="recurses/img/experiences/img-exp-2-6.jpg"
+                                        alt="">
+                                    <img class="cell cell-exp2 cell-img7" src="recurses/img/experiences/img-exp-2-7.jpg"
+                                        alt="">
+                                    <img class="cell cell-exp2 cell-img8" src="recurses/img/experiences/img-exp-2-8.jpg"
+                                        alt="">
+
+                                </div>
+                            </div>
+                            <div class="experience-slide" id="experience3">
+                                <div class="grid-container">
+                                    <div class="cell cell-exp3 cell-date">
+                                        <p><span> Sep</span>13 </p>
+                                        <p><span>Jun</span>17</p>
+                                    </div>
+                                    <div class="cell cell-exp3 cell-position">
+                                        <p>Auxiliar de ingeniería</p>
+                                    </div>
+                                    <div class="cell cell-exp3 cell-company">
+                                        <p>Diseños Geotécnicos S.A.S</p>
+                                    </div>
+                                    <div class="cell cell-exp3 cell-function">
+                                        <p> <span> Función principal:</span></p>
+                                        <p> Programar y procesar información de exploración de campo, digitalización de
+                                            planos e
+                                            informes.</p>
+                                    </div>
+                                    <div class="cell cell-exp3 cell-description desc-1">
+                                        <h4>JAVA</h4>
+                                        <p>Gestión de datos </p>
+                                    </div>
+                                    <div class="cell cell-exp3 cell-description desc-2">
+                                        <h4>VBA</h4>
+                                        <p>Dibujo CAD automatizado</p>
+                                    </div>
+
+                                    <img class="cell cell-exp3 cell-img1" src="recurses/img/experiences/img-exp-3-1.jpg"
+                                        alt="">
+                                    <img class="cell cell-exp3 cell-img2" src="recurses/img/experiences/img-exp-3-2.jpg"
+                                        alt="">
+                                    <img class="cell cell-exp3 cell-img3" src="recurses/img/experiences/img-exp-3-3.jpg"
+                                        alt="">
+                                    <img class="cell cell-exp3 cell-img4" src="recurses/img/experiences/img-exp-3-4.jpg"
+                                        alt="">
+                                    <img class="cell cell-exp3 cell-img5" src="recurses/img/experiences/img-exp-3-5.jpg"
+                                        alt="">
+                                    <img class="cell cell-exp3 cell-img6" src="recurses/img/experiences/img-exp-3-6.jpg"
+                                        alt="">
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
 
+            </section>
+
+            <div class="container-transition"></div>
+
+            <section id="studies">
+                <h2 class="title-section">Estudios</h2>
+                <p class="description-section">Gracias a mi educación, cuento con habilidades técnicas y un bagaje de
+                    conocimientos que me capacitan para encarar los desafíos de la tecnología e ingeniería.</p>
+                <div class="studies-container">
+                    <div class="container-studies">
+                        <div class="cont-left">
+                            <div class="img-training img-show">
+                                <img src="recurses/img/studies/img-platzi.jpg" alt="">
+                            </div>
+                            <div class="img-training">
+                                <img src="recurses/img/studies/img-unal.jpg" alt="">
+                            </div>
+                            <div class="img-training">
+                                <img src="recurses/img/studies/img-upb.jpg" alt="">
+                            </div>
+                            <div class="img-training">
+                                <img src="recurses/img/studies/img-uniminuto.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="cont-right">
+                            <div>
+                                <div class="title-training">
+                                    <h2>Platzi</h2>
+                                    <div class="btn-training btn-training-select">
+
+                                    </div>
+                                </div>
+                                <div class="description-training description-show" id="container-training-4">
+                                    <h3> Cursos Convenio APPS.CO</h3>
+                                    <h4>En proceso</h4>
+                                    <p>► Fundamentos de ingeniería de software.
+                                        ► Curso profesional de Git y GitHub.
+                                        ► Curso práctico de JavaScript.
+                                        ► Curso de fundamentos de Python.</p>
+                                </div>
+                            </div>
+                            <div class="card-training">
+                                <div class="title-training">
+                                    <h2>
+                                        Universidad Nacional de Colombia
+                                    </h2>
+                                    <div class="btn-training">
+
+                                    </div>
+                                </div>
+                                <div class="description-training" id="container-training-1">
+                                    <h3>Magister en ingeniería - geotecnia </h3>
+                                    <h4>En proceso</h4>
+                                    <p> Como trabajo de grado estoy elaborando un software que incluye una GUI para el
+                                        análisis numéricos y método del punto material (MPM), utilizando principalmente
+                                        Python y Qt (PySide6).</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="title-training">
+                                    <h2>
+                                        Universidad Pontifica Bolivariana -MinTIC
+                                    </h2>
+                                    <div class="btn-training">
+
+                                    </div>
+                                </div>
+                                <div class="description-training">
+                                    <h3> Curso de programación con énfasis en aplicaciones móviles y web </h3>
+                                    <h4>Diciembre 2021 </h4>
+                                    <p> Durante el curso se desarrolló una aplicación web llamada club pastelero, con
+                                        tecnologías como HTML, CSS, Javascript, Firebase y Arduino. Y se participó en un
+                                        hackathon elaborando una app llamada VolcanApp con tecnologías como Java,
+                                        Firebase y Arduino. </p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="title-training" id="btn-training-3">
+                                    <h2>Colombia Corporación Universitaria Minuto de Dios </h2>
+                                    <div class="btn-training">
+
+                                    </div>
+                                </div>
+                                <div class="description-training" id="container-training-3">
+                                    <h3> Ingeniero civil </h3>
+                                    <h4>Abril 2017</h4>
+                                    <p> Como trabajo de grado se elaboró un modelo de simulación física delfenómeno de
+                                        licuación en arenas sueltas, con la tarjeta Arduino. </p>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <div class="container-transition"></div>
+
+            <section id="feedback">
+                <div class="feedback-container">
+                    <h2 class="title-section">Feedback</h2>
+
+
+                    <div class="data-section">
+
+
+                        <div class="container-feedback">
+                            <p>¡Gracias por visitar mi portafolio! Tu opinión es muy importante para mí, ya que me ayuda
+                                a
+                                mejorar y seguir creciendo. Si tienes algún
+                                <span>
+
+                                    comentario,
+                                </span>
+                                <span>
+                                    sugerencia
+                                </span>
+                                o cualquier
+                                <span>feedback</span>
+                                sobre mi trabajo, no dudes en escribirlo. Aprecio mucho tu tiempo y estaré encantado de
+                                escuchar lo que piensas. ¡Gracias de antemano por tu valioso aporte!
+                            </p>
+                            <div class="feedback">
+                                <textarea class="input-a" name="comentarios" rows="10" cols="40"
+                                    placeholder="Escribe tu comentario aquí" id="input-area"></textarea>
+                            </div>
+
+                            <div class="container-inputs" id="container-inputs">
+                                <div class="button-bg">
+                                    <input class="input-l" type="text" id="input" placeholder="Digita tu nombre">
+                                    <div id="btn-send">
+                                        <button id="text-send">Enviar</button>
+                                        <div id="icon-send"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="alert-container" id="alertContainer">
+                                <div class="alert" id="alertMessage"></div>
+                            </div>
+
+
+                            <div id="feedback-cards"></div>
+
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+            <div class="container-transition"></div>
+
+        </div>
+        <footer id="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <p class="name">Edwin j Arévalo</p>
+                </div>
+                <div class="footer-section footer-section-lines">
+                    <ul class="menu">
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#about">Acerca de mi</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#work-experience">Experiencia </a></li>
+                    </ul>
+                    <p class="copyright">"Hay dos formas de escribir programas sin errores; sólo el tercero funciona"
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <p class="contact">Contáctame</p>
+                    <div class="social-icons-footer">
+
+
+
+
+                        <a href="https://www.linkedin.com/in/edwin-j-arevalo" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/edwinar13" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="https://api.whatsapp.com/send?phone=573118994279&amp;text=Hola%20Edwin, "
+                            target="_blank">
+                            <i class="fab fa-whatsapp">
+                            </i>
+                        </a>
+
+                        <a href="mailto:edwinarevalo88@gmail.com">
+                            <i class="fa fa-envelope" aria-hidden="true">
+                            </i>
+                        </a>
+
+                    </div>
+                </div>
             </div>
-
-
-        </section>
-
-        <!-- Contenido de la sección Projects -->
-        <section id="projects">
-            <div class="projects-section">
-                <h2 class="title-section"> Proyectos</h2>
-                <p class="description-section">
-                    Te invito a descubrir una selección de mis proyectos más destacados. Cada uno de ellos representa un
-                    desafío creativo y técnico que me ha permitido desarrollar mis habilidades.
-
-                </p>
-                <div class="gallery">
-
-
-                    <div class="image-container">
-                        <img src="recurses/img/projects/mpm-un-.jpeg" alt="Imagen 1" class="gallery-image" />
-                        <div class="image-details">
-                            <h2>Escritorio: MPM-UN</h2>
-                            <p>Programa de escritorio con una GUI moderna desarrollada en Python y Qt (PySide6), para
-                                ejecutar análisis numéricos y método del punto material (MPM).</p>
-                            <div class="container-info">
-                                <div class="skill">
-                                    <i class="fa fa-tag" aria-hidden="true"></i>
-                                    <h5>Python</h5>
-                                    <h5>PySide6</h5>
-                                </div>
-                                <div class="links">
-                                    <a href="https://github.com/edwinar13/MPM-UN/tree/alpha" target="_blank">
-                                        <img class="icon" src="recurses/img/iconos/github.png" alt="">
-                                    </a>
-                                    <a href="https://youtu.be/Qk8DzIMOPb0" target="_blank">
-                                        <img class="icon" src="recurses/img/iconos/youtube.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="image-container">
-                        <img src="recurses/img/projects/inggeodev-.jpeg" alt="Imagen 2" class="gallery-image" />
-                        <div class="image-details">
-                            <h2>Web: inggeodev</h2>
-                            <p>Aplicación web que presta servicios de desarrollo de software para ingeniería civil,
-                                relacionado a la gestión de información de exploraciones geotecnias.</p>
-                            <div class="container-info">
-                                <div class="skill">
-                                    <i class="fa fa-tag" aria-hidden="true"></i>
-                                    <h5>HTML</h5>
-                                    <h5>CSS</h5>
-                                    <h5>JS</h5>
-                                    <h5>Python</h5>
-                                    <h5>flask</h5>
-                                </div>
-                                <div class="links">
-
-                                    <a href="https://github.com/edwinar13/inggeodev" target="_blank">
-                                        <img class="icon" src="recurses/img/iconos/github.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="image-container">
-                        <img src="recurses/img/projects/club-pastelero-.jpg" alt="Imagen 2" class="gallery-image" />
-                        <div class="image-details">
-                            <h2>Web> ClubPasteleria</h2>
-                            <p>Aplicación web desarrollada en el curso Misión TIC 2022, cuyo objetivo es brindar recetas
-                                y artículos de repostería, y una cocina interactiva que incluye aparatos con IoT.</p>
-                            <div class="container-info">
-                                <div class="skill">
-                                    <i class="fa fa-tag" aria-hidden="true"></i>
-                                    <h5>HTML</h5>
-                                    <h5>CSS</h5>
-                                    <h5>JS</h5>
-                                </div>
-                                <div class="links">
-                                    <a href="https://github.com/Programaciongrupo6/SitioWeb_ClubPasteleria_MINTIC"
-                                        target="_blank">
-                                        <img class="icon" src="recurses/img/iconos/github.png" alt="">
-                                    </a>
-                                    <a href="https://programaciongrupo6.github.io/SitioWeb_ClubPasteleria_MINTIC/"
-                                        target="_blank">
-                                        <img class="icon" src="recurses/img/iconos/enlace.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="image-container">
-                        <img src="recurses/img/projects/volcanapp.png" alt="Imagen 2" class="gallery-image" />
-                        <div class="image-details">
-                            <h2>Móvil: VolcanApp</h2>
-                            <p>Aplicación móvil desarrollada durante el Hackathon-Misión TIC 2022, esta app se
-                                orienta a reducir los efectos naturales de las erupciones volcánicas.</p>
-                            <div class="container-info">
-                                <div class="skill">
-                                    <i class="fa fa-tag" aria-hidden="true"></i>
-                                    <h5>Java</h5>
-                                    <h5>Firebase</h5>
-                                </div>
-                                <div class="links">
-                                    <a href="https://github.com/Programaciongrupo6/VolcanApp_HackathonGrupo3"
-                                        target="_blank">
-                                        <img class="icon" src="recurses/img/iconos/github.png" alt="">
-                                    </a>
-                                    <a href="https://youtube.com/shorts/1FJXG6WmN9Q?feature=share" target="_blank">
-                                        <img class="icon" src="recurses/img/iconos/youtube.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="image-container">
-                        <img src="recurses/img/projects/hardware.jpg" alt="Imagen 2" class="gallery-image" />
-                        <div class="image-details">
-                            <h2>Hardware: PIP</h2>
-                            <p>Se desarrollo varios prototipos, de los cuales se destaca el equipo para ejecutar prueba
-                                integridad de pilotes (PIP), el cual permite leer tiempos en los cuales viajan las ondas
-                                en los pilotes en concreto.</p>
-                            <div class="container-info">
-                                <div class="skill">
-                                    <i class="fa fa-tag" aria-hidden="true"></i>
-                                    <h5>Arduino</h5>
-                                    <h5>Python</h5>
-                                </div>
-                                <div class="links">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-                </div>
-            </div>
-
-        </section>
-
-
-        <section id="work-experience">
-            <div class="experience-container">
-
-                <h2 class="title-section">Experiencia laboral</h2>
-
-                <p class="description-section">
-                    Te invito a descubrir las empresas donde he aportado valor con mis habilidades de programación
-                </p>
-                <div class="circles">
-
-                    <div class="circle" onclick="showExperience(1)"></div>
-                    <div class="circle" onclick="showExperience(2)"></div>
-                    <div class="circle" onclick="showExperience(3)"></div>
-
-                </div>
-
-                <div class="container-slider">
-                    <div class="area-slider">
-                        <div class="experience-slide" id="experience1">
-                            <div class="grid-container">
-                                <div class="cell cell-exp1 cell-date">
-                                    <p><span> Oct</span>19 <br> <span>Abr</span>23</p>
-                                </div>
-
-                                <div class="cell cell-exp1 cell-position">
-                                    <p> Ingeniero de diseño geotécnico</p>
-                                </div>
-                                <div class="cell cell-exp1 cell-company">
-                                    <p> Argeo Consultores Geotécnicos S.A.S</p>
-                                </div>
-                                <div class="cell cell-exp1 cell-function">
-                                    <p> <span> Función principal:</span><br> Ingeniero a cargo de la elaboración de
-                                        estudios
-                                        geotécnicos.</p>
-                                </div>
-                                <div class="cell cell-exp1 cell-description desc-1">
-                                    <h4>PYTHON</h4>
-                                    <p>Análisis geotécnicos </p>
-                                </div>
-                                <div class="cell cell-exp1 cell-description desc-2">
-                                    <h4>VBA</h4>
-                                    <p>Dibujo CAD automatizado</p>
-                                </div>
-
-                                <img class="cell cell-exp1 cell-img1" src="recurses/img/experiences/img-exp-1-1.png"
-                                    alt="">
-                                <img class="cell cell-exp1 cell-img2" src="recurses/img/experiences/img-exp-1-2.png"
-                                    alt="">
-                                <img class="cell cell-exp1 cell-img3" src="recurses/img/experiences/img-exp-1-3.png"
-                                    alt="">
-                                <img class="cell cell-exp1 cell-img4" src="recurses/img/experiences/img-exp-1-4.png"
-                                    alt="">
-                                <img class="cell cell-exp1 cell-img5" src="recurses/img/experiences/img-exp-1-5.png"
-                                    alt="">
-                                <img class="cell cell-exp1 cell-img6" src="recurses/img/experiences/img-exp-1-6.png"
-                                    alt="">
-                                <img class="cell cell-exp1 cell-img7" src="recurses/img/experiences/img-exp-1-7.png"
-                                    alt="">
-
-                            </div>
-                        </div>
-                        <div class="experience-slide" id="experience2">
-                            <div class="grid-container">
-                                <div class="cell cell-exp2 cell-date">
-                                    <p><span> Jun</span>17 <br> <span>Sep</span>19</p>
-                                </div>
-                                <div class="cell cell-exp2 cell-position">
-                                    <p> Ingeniero de diseño geotécnico</p>
-                                </div>
-                                <div class="cell cell-exp2 cell-company">
-                                    <p> Diseños Geotécnicos S.A.S</p>
-                                </div>
-                                <div class="cell cell-exp2 cell-function">
-                                    <p> <span> Función principal:</span><br> Ingeniero a cargo de la elaboración de
-                                        estudios
-                                        geotécnicos.</p>
-                                </div>
-                                <div class="cell cell-exp2 cell-description desc-1">
-                                    <h4>ARDUINO</h4>
-                                    <p>Prototipos para instrumentación </p>
-                                </div>
-                                <div class="cell cell-exp2 cell-description desc-2">
-                                    <h4>VBA</h4>
-                                    <p>Dibujo CAD automatizado</p>
-                                </div>
-
-                                <img class="cell cell-exp2 cell-img1" src="recurses/img/experiences/img-exp-2-1.png"
-                                    alt="">
-                                <img class="cell cell-exp2 cell-img2" src="recurses/img/experiences/img-exp-2-2.png"
-                                    alt="">
-                                <img class="cell cell-exp2 cell-img3" src="recurses/img/experiences/img-exp-2-3.png"
-                                    alt="">
-                                <img class="cell cell-exp2 cell-img4" src="recurses/img/experiences/img-exp-2-4.png"
-                                    alt="">
-                                <img class="cell cell-exp2 cell-img5" src="recurses/img/experiences/img-exp-2-5.png"
-                                    alt="">
-                                <img class="cell cell-exp2 cell-img6" src="recurses/img/experiences/img-exp-2-6.png"
-                                    alt="">
-                                <img class="cell cell-exp2 cell-img7" src="recurses/img/experiences/img-exp-2-7.png"
-                                    alt="">
-                                <img class="cell cell-exp2 cell-img8" src="recurses/img/experiences/img-exp-2-8.png"
-                                    alt="">
-
-                            </div>
-                        </div>
-                        <div class="experience-slide" id="experience3">
-                            <div class="grid-container">
-                                <div class="cell cell-exp3 cell-date">
-                                    <p><span> Sep</span>13 <br> <span>Jun</span>17</p>
-                                </div>
-                                <div class="cell cell-exp3 cell-position">
-                                    <p>Auxiliar de ingeniería</p>
-                                </div>
-                                <div class="cell cell-exp3 cell-company">
-                                    <p>Diseños Geotécnicos S.A.S</p>
-                                </div>
-                                <div class="cell cell-exp3 cell-function">
-                                    <p> <span> Función principal:</span><br>Programar y procesar información de
-                                        exploración
-                                        de campo, digitación de
-                                        planos e informes.</p>
-                                </div>
-                                <div class="cell cell-exp3 cell-description desc-1">
-                                    <h4>JAVA</h4>
-                                    <p>Gestión de datos </p>
-                                </div>
-                                <div class="cell cell-exp3 cell-description desc-2">
-                                    <h4>VBA</h4>
-                                    <p>Dibujo CAD automatizado</p>
-                                </div>
-
-                                <img class="cell cell-exp3 cell-img1" src="recurses/img/experiences/img-exp-3-1.png"
-                                    alt="">
-                                <img class="cell cell-exp3 cell-img2" src="recurses/img/experiences/img-exp-3-2.png"
-                                    alt="">
-                                <img class="cell cell-exp3 cell-img3" src="recurses/img/experiences/img-exp-3-3.png"
-                                    alt="">
-                                <img class="cell cell-exp3 cell-img4" src="recurses/img/experiences/img-exp-3-4.png"
-                                    alt="">
-                                <img class="cell cell-exp3 cell-img5" src="recurses/img/experiences/img-exp-3-5.png"
-                                    alt="">
-                                <img class="cell cell-exp3 cell-img6" src="recurses/img/experiences/img-exp-3-6.png"
-                                    alt="">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <section id="feedback">
-            <div class="feedback-container">
-                <h2 class="title-section">Feedback</h2>
-
-
-                <div class="data-section">
-
-
-                    <div class="container-feedback">
-                        <p>¡Gracias por visitar mi portafolio! Tu opinión es muy importante para mí, ya que me ayuda a
-                            mejorar y seguir creciendo. Si tienes algún
-                            <span>
-
-                                comentario,
-                            </span>
-                            <span>
-                                sugerencia
-                            </span>
-                            o cualquier
-                            <span>feedback</span>
-                            sobre mi trabajo, no dudes en escribirlo. Aprecio mucho tu tiempo y estaré encantado de
-                            escuchar lo que piensas. ¡Gracias de antemano por tu valioso aporte!
-                        </p>
-                        <div class="feedback">
-                            <textarea name="comentarios" rows="10" cols="40" placeholder="Escribe tu comentario aquí"
-                                id="input-area"></textarea>
-                        </div>
-
-
-
-
-                        <div class="container-inputs" id="container-inputs">
-                            <input type="text" id="input" placeholder="Digita tu nombre">
-                            <div class="button-bg">
-                                <button id="btn" onclick="sendmsn()">Enviar</button>
-                                <div></div>
-                            </div>
-                        </div>
-
-                        <div id="feedback-cards"></div>
-
-
-                    </div>
-                    <div class="efecto-ok">
-                        <div class="svg-e svg"> </div>
-                        <div class="svg-j svg"> </div>
-                        <div class="svg-a svg"> </div>
-                    </div>
-
-
-
-                </div>
-
-
-            </div>
-
-        </section>
-
-
-        <!--  
-            
-            EJEMPLO OK de animacion
-        https://css-tricks.com/animate-svg-path-changes-in-css/
-        este para el recorrido 
-            https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_motion_path
-        
-        -->
-
-
-        <div class="container-transition"></div>
-
-
+        </footer>
     </div>
 
 
-    <footer id="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <p class="name">Edwin j Arévalo</p>
-            </div>
-            <div class="footer-section footer-section-lines">
-                <ul class="menu">
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#about">Acerca de mi</a></li>
-                    <li><a href="#projects">Proyectos</a></li>
-                    <li><a href="#work-experience">Experiencia </a></li>
-                </ul>
-                <p class="copyright">© 2023 Todos los derechos reservados</p>
-            </div>
-            <div class="footer-section">
-                <p class="contact">Contáctame</p>
-                <div class="social-icons-footer">
-
-
-
-
-                    <a href="https://www.linkedin.com/in/edwin-j-arevalo" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/edwinar13" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-
-                    <a href="https://api.whatsapp.com/send?phone=573118994279&amp;text=Hola%20Edwin, " target="_blank">
-                        <i class="fab fa-whatsapp">
-                        </i>
-                    </a>
-
-                    <a href="mailto:edwinarevalo88@gmail.com">
-                        <i class="fa fa-envelope" aria-hidden="true">
-                        </i>
-                    </a>
-
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-    <!-- Scripts JS -->
 
     <script src="js/script_dev.js"></script>
     <script src="js/script_dev_home.js"></script>
     <script src="js/script_dev_about.js"></script>
     <script src="js/script_dev_projects.js"></script>
     <script src="js/script_dev_experience.js"></script>
+    <script src="js/script_dev_studies.js"></script>
     <script src="js/script_dev_feedback.js"></script>
     <script src="js/script_dev_footer.js"></script>
 

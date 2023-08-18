@@ -2,90 +2,80 @@
 
 const containerDev = document.querySelector(".image-container-dev");
 const containerIng = document.querySelector(".image-container-ing");
+const iconPte = document.querySelector(".icon-pte");
+const iconCode = document.querySelector(".icon-code");
 const text_ing_dev = document.querySelector(".ul-container");
 
 
 
+function showText1() {
+  text_ing_dev.style.transform = "translateY(0%)";
+  text_ing_dev.style.opacity = "1.0";
+}
+containerIng.addEventListener("mouseover", showText1);
+iconPte.addEventListener("mouseover", showText1);
 
 
-containerIng.addEventListener("mouseover", function () {
-  text_ing_dev.style.transform = "translateY(0%)"; // Revertimos el desplazamiento para ocultar el texto
-  text_ing_dev.style.opacity = "1.0";  
-});
-
-containerDev.addEventListener("mouseover", function () {
-  text_ing_dev.style.transform = "translateY(-50%)"; // Desplazamos el texto hacia arriba
-  text_ing_dev.style.opacity = "1.0";  
-});
-
-
-containerIng.addEventListener("mouseout", function () { 
-    text_ing_dev.style.transform = "translateY(-50%)"; // Desplazamos el texto hacia arriba
-    text_ing_dev.style.opacity = "0.0";  
-});
-
-
-containerDev.addEventListener("mouseout", function () {   
-    text_ing_dev.style.transform = "translateY(-0)"; // Revertimos el desplazamiento para ocultar el texto
-    text_ing_dev.style.opacity = "0.0";
-});
+function showText2() {
+  text_ing_dev.style.transform = "translateY(-50%)";
+  text_ing_dev.style.opacity = "1.0"; 
+}
+containerDev.addEventListener("mouseover", showText2);
+iconCode.addEventListener("mouseover", showText2);
 
 
 
 
-/*
-
-const containerDev = document.querySelector(".image-container-dev");
-const containerIng = document.querySelector(".image-container-ing");
-const text_ing = document.querySelector(".edwin-ing");
-const text_dev = document.querySelector(".edwin-dev");
-
-
+function hideText1() {
+  text_ing_dev.style.transform = "translateY(-50%)"; 
+  text_ing_dev.style.opacity = "0.0";  
+}
+containerIng.addEventListener("mouseout", hideText1);
+iconPte.addEventListener("mouseout", hideText1);
 
 
-
-containerIng.addEventListener("mouseover", function () {
-  
-  const windowWidth = window.innerWidth;
-  if (windowWidth > 500) {
-    
-
-    text_ing.style.transform = "translateY(0)"; // Revertimos el desplazamiento para ocultar el texto
-    text_ing.style.opacity = "0.7";
-  }
-});
-
-containerDev.addEventListener("mouseover", function () {
-  const windowWidth = window.innerWidth;
-  if (windowWidth > 500) {
-    
-
-    text_dev.style.transform = "translateY(-100%)"; // Desplazamos el texto hacia arriba
-    text_dev.style.opacity = "0.7";
-  }
-});
+function hideText2() {
+  text_ing_dev.style.transform = "translateY(-0)"; 
+  text_ing_dev.style.opacity = "0.0"; 
+}
+containerDev.addEventListener("mouseout", hideText2);
+iconCode.addEventListener("mouseout", hideText2);
 
 
 
 
-containerIng.addEventListener("mouseout", function () {
-  const windowWidth = window.innerWidth;
-  if (windowWidth > 500) {
-    
-    text_ing.style.transform = "translateY(-100%)"; // Desplazamos el texto hacia arriba
-    text_ing.style.opacity = "0.0";
-  }
-});
 
 
 
-containerDev.addEventListener("mouseout", function () {
-  const windowWidth = window.innerWidth;
-  if (windowWidth > 500) {
-    
-    text_dev.style.transform = "translateY(-0)"; // Revertimos el desplazamiento para ocultar el texto
-    text_dev.style.opacity = "0.0";
-  }
-});
 
-*/
+
+
+
+
+
+
+
+
+
+
+sendData()
+
+
+function sendData() {
+  const dateCurrent = new Date();
+  const url = 'https://flask-production-49a1.up.railway.app/api/clickdev';
+  const data = {
+      date: dateCurrent
+  };
+
+  fetch(url, {
+
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+  });
+}
+
+

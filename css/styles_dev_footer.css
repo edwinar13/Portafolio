@@ -2,25 +2,10 @@
 /*===========           Seccion          =============*/
 /*====================================================*/
 #footer {
-  background-color: #333;
   color: #fff;
-  background-image: linear-gradient(to bottom, #333, #555);
-  background-size: 100% 200%;
-  animation: changeBackground 2s infinite alternate;
+  margin-top: 100px;
 
 }
-
-
-/* Animación de cambio de fondo */
-@keyframes changeBackground {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 0 100%;
-  }
-}
-
 
 
 
@@ -46,31 +31,39 @@
   text-align: center;
   font-size: 25px;
   font-weight: 400;
+  color: #f1c77d;
 }
 
 /*   contenedor central  */
 .menu {
   display: flex;
   list-style: none;
+  justify-content: center;
   padding: 0;
   margin: 10px 0;
   font-size: 14px;
+  width: 100%;
 }
 
 
 
 
-.menu li {
-  margin-right: 20px;
+.menu li {  
+  margin: 5px 15px ;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu li:last-child {
   margin-right: 0;
+
 }
 
 .menu li a {
   color: #fff;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .menu li a:hover {
@@ -82,6 +75,7 @@
   margin: 0;
   font-size: 13px;
   text-align: center;
+  color: rgba(255, 255, 255, 0.356);
 }
 
 /* Estilo para el segundo div (menú) */
@@ -97,6 +91,7 @@
   font-weight: bold;
   letter-spacing: 3px;
   margin: 4px;
+  color: #f1c77d;
 }
 
 .social-icons-footer {
@@ -111,7 +106,7 @@
 }
 
 .social-icons-footer a:hover {
-  color: #47b4c7;
+  color: #f1c77d;
 }
 
 /* Estilos para las líneas grises */
@@ -127,6 +122,12 @@
 /* Media query para el diseño responsivo */
 @media (max-width: 700px) {
 
+  .footer-container {
+    flex-direction: column;
+  }
+  
+
+
   /*   contenedor izquierdo  */
   .name {
     font-size: 15px;
@@ -139,6 +140,11 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 5px;
+  }
+
+  .menu li {  
+    margin: 0px ;
+    flex: 1;
   }
 
   .copyright {
