@@ -7,7 +7,7 @@ btnsSkill.forEach(btnSkill => {
   btnSkill.addEventListener('click', () => {
     hideCardBtn()
     btnSkill.classList.add(`btn-skill-selected`);
-
+    
     var nameBtn = btnSkill.getAttribute("id")    
     var groupSkill =''
     if(nameBtn == "btn-1"){
@@ -24,6 +24,7 @@ btnsSkill.forEach(btnSkill => {
       groupSkill  ='.tool'      
     } else if(nameBtn == "btn-7"){
       viewAllCards();     
+      btnSkill.classList.add(`btn-skill-selected`);
       return;
     }else{
       return;

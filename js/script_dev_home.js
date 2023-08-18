@@ -1,6 +1,6 @@
 var indexPrev = 2;
 var indexNext = 0;
-let listCharacters = [$(".char-1"), $(".char-2"), $(".char-3")];
+let listCharacters = [$(".char-1"), $(".char-2"), $(".char-3"), $(".char-4"), $(".char-5")];
 var characterPrev = null;
 var characterNext = null;
 
@@ -16,8 +16,8 @@ function updateCharacter() {
     indexPrev = indexNext
     indexNext += 1;
 
-    if (indexNext >= 3) {
-        indexPrev = 2;
+    if (indexNext >= 5) {
+        indexPrev = 4;
         indexNext = 0;
     }
 }
