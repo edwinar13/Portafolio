@@ -2,6 +2,11 @@
 /*===========           Seccion          =============*/
 /*====================================================*/
 
+html{
+  --space-sm: 0.75em;
+}
+
+
 #studies {
   margin-left: 8vw;
   margin-right: 8vw;
@@ -204,7 +209,11 @@
 .card-training{
   border-radius: 5px;
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.596);
+  width: 100%;
 }
+
+
+
 
 
 .title-training{
@@ -274,6 +283,4 @@
   clip-path: polygon(35% 35%,       35% 35%, 35% 35%, 65% 35%, 65% 35%,       65% 35%, 65% 65%,       65% 65%, 65% 65%, 35% 65%, 35% 65%,              35% 65%);
   background-color: #d17639;
 }
-
-
 

@@ -50,20 +50,13 @@ iconCode.addEventListener("mouseout", hideText2);
 
 
 
-
-
-
-
-
-
-
-
 sendData()
 
 
 function sendData() {
   const dateCurrent = new Date();
   const url = 'https://flask-production-49a1.up.railway.app/api/clickdev';
+
   const data = {
       date: dateCurrent
   };

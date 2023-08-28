@@ -30,14 +30,14 @@
 .circle {
   width: 15px;
   height: 15px;
-  background-image: radial-gradient(circle at 10% 10%, rgb(215 141 21) 0%, rgb(215, 121, 21) 100%);
+  background-image: radial-gradient(circle at 10% 10%, rgb(228, 201, 157) 0%, rgb(215, 121, 21) 100%);
   border-radius: 50%;
   margin: 0 10px;
   cursor: pointer;
 }
 
 .circle-select{
-  background-image: radial-gradient(circle at 10% 10%, rgb(215, 121, 21) 0%, rgb(200 60 21) 100%);
+  background-image: radial-gradient(circle at 10% 10%, rgb(215, 121, 21) 0%, rgb(66, 24, 12) 100%);
 }
 
 
